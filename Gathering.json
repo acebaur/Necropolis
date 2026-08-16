@@ -549,6 +549,24 @@
                 "includeChildSelections": true
               }
             ]
+          },
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "7c40-3927-ac44-051e",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true,
+                "childName": "Crawling-Dark"
+              }
+            ]
           }
         ]
       },
@@ -659,6 +677,26 @@
                 "name": "Description",
                 "typeId": "f11e-ca03-5b2a-f61b",
                 "$text": "When this model performs an attack action, add +1 to the damage total."
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "7c40-3927-ac44-051e",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true,
+                "childName": "Crawling-Dark"
               }
             ]
           }
@@ -835,6 +873,26 @@
               }
             ],
             "defaultSelectionEntryId": "b6b1-97fb-c53b-ffb3"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "7c40-3927-ac44-051e",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true,
+                "childName": "Crawling-Dark"
+              }
+            ]
           }
         ]
       },
@@ -1392,6 +1450,26 @@
             "primary": false,
             "name": "Colossal"
           }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "7c40-3927-ac44-051e",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true,
+                "childName": "Crawling-Dark"
+              }
+            ]
+          }
         ]
       },
       {
@@ -1655,6 +1733,14 @@
         "id": "8ac9-2b06-9ded-5f64",
         "type": "selectionEntry",
         "targetId": "b361-a4da-2883-5bac"
+      },
+      {
+        "import": true,
+        "name": "Flying Beast",
+        "hidden": false,
+        "id": "793c-b9a2-5bbd-5c20",
+        "type": "selectionEntry",
+        "targetId": "5039-a33f-e10d-9504"
       }
     ],
     "sharedProfiles": [
