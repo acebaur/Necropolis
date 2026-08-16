@@ -1,0 +1,5664 @@
+{
+  "gameSystem": {
+    "id": "sys-4fd6-5f37-2e2f-60dd",
+    "name": "Necropolis",
+    "battleScribeVersion": "2.03",
+    "revision": 1,
+    "categoryEntries": [
+      {
+        "name": "Leader",
+        "id": "default-category"
+      },
+      {
+        "name": "Minion",
+        "id": "0783-45b6-e85d-698d",
+        "hidden": false
+      },
+      {
+        "name": "Blood",
+        "id": "3754-d03b-a0b5-1e66",
+        "hidden": false
+      },
+      {
+        "name": "Bone",
+        "id": "3bae-4986-a0b2-b480",
+        "hidden": false
+      },
+      {
+        "name": "Plasm",
+        "id": "3b8d-37a3-93c5-a35f",
+        "hidden": false
+      },
+      {
+        "name": "Colossal",
+        "id": "63e3-607f-9056-81b5",
+        "hidden": false
+      },
+      {
+        "name": "Husk",
+        "id": "d28f-2a3d-ed6e-c6fe",
+        "hidden": false
+      },
+      {
+        "name": "Fly",
+        "id": "8584-434d-f7a8-0ac4",
+        "hidden": false
+      },
+      {
+        "name": "Beast",
+        "id": "4f3c-31a1-da02-e3d4",
+        "hidden": false
+      },
+      {
+        "name": "Familiar",
+        "id": "edee-b2a2-8ae2-3872",
+        "hidden": false
+      },
+      {
+        "name": "Remnant",
+        "id": "9408-6d6b-af42-7a6f",
+        "hidden": false
+      },
+      {
+        "name": "Covenant",
+        "id": "8ab7-9b25-8404-52b3",
+        "hidden": false
+      },
+      {
+        "name": "Lich",
+        "id": "ce2d-975a-98b2-ec8e",
+        "hidden": true
+      },
+      {
+        "name": "Revenant",
+        "id": "13e1-0cf0-c00a-70b9",
+        "hidden": true
+      },
+      {
+        "name": "Small Beast",
+        "id": "27f3-4ecd-2d52-15d5",
+        "hidden": true
+      },
+      {
+        "name": "Large Beast",
+        "id": "66c9-c8ac-10fd-cc6e",
+        "hidden": true
+      },
+      {
+        "name": "Flying Beast",
+        "id": "b5af-56cf-d76e-e87c",
+        "hidden": true
+      }
+    ],
+    "forceEntries": [
+      {
+        "name": "Standard Game",
+        "hidden": false,
+        "id": "default-force",
+        "categoryLinks": [
+          {
+            "name": "Covenant",
+            "hidden": false,
+            "id": "default-force-category-link",
+            "targetId": "8ab7-9b25-8404-52b3"
+          },
+          {
+            "name": "Leader",
+            "hidden": false,
+            "id": "9370-da98-b5ad-fc8a",
+            "targetId": "default-category",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "5624-56bb-f710-b57d-min",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "5624-56bb-f710-b57d-max",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          },
+          {
+            "name": "Minion",
+            "hidden": false,
+            "id": "c764-20b4-8b4b-8fdb",
+            "targetId": "0783-45b6-e85d-698d"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 300,
+            "field": "7bf0-2994-bf46-2ea8",
+            "scope": "parent",
+            "shared": true,
+            "id": "d438-0f68-ecf3-e9a0",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": 350,
+            "field": "d438-0f68-ecf3-e9a0",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "8122-4392-6165-78ac",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true,
+                "childName": "Miserly"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "type": "gameSystem",
+    "authorName": "Acebaur",
+    "costTypes": [
+      {
+        "name": "Obols",
+        "id": "7bf0-2994-bf46-2ea8",
+        "defaultCostLimit": -1
+      }
+    ],
+    "profileTypes": [
+      {
+        "name": "Unit",
+        "id": "9272-a60a-c387-53cb",
+        "hidden": false,
+        "kind": "model",
+        "characteristicTypes": [
+          {
+            "name": "AP",
+            "id": "838d-3831-326a-d543"
+          },
+          {
+            "name": "M",
+            "id": "f5bf-7829-484a-db1d"
+          },
+          {
+            "name": "Violence",
+            "id": "09a6-6cdb-ee74-e4d7"
+          },
+          {
+            "name": "Ranged",
+            "id": "8a1d-c563-4b54-9a31"
+          },
+          {
+            "name": "HP",
+            "id": "851a-dd01-b57f-9383"
+          }
+        ]
+      },
+      {
+        "name": "Abilities",
+        "id": "9087-e42b-f4e7-2001",
+        "hidden": false,
+        "kind": "ability",
+        "characteristicTypes": [
+          {
+            "name": "Description",
+            "id": "f11e-ca03-5b2a-f61b"
+          }
+        ]
+      },
+      {
+        "name": "Weapon",
+        "id": "a950-f780-5e86-eb45",
+        "hidden": false,
+        "characteristicTypes": [
+          {
+            "name": "Handed",
+            "id": "7025-f808-11d5-2fd3"
+          },
+          {
+            "name": "Range",
+            "id": "5cfc-9542-21ef-a99f"
+          },
+          {
+            "name": "Attacks",
+            "id": "b94d-0abd-0f04-a2b7"
+          },
+          {
+            "name": "Damage",
+            "id": "1851-9ed4-49ab-5337"
+          },
+          {
+            "name": "Special",
+            "id": "dbee-ea89-7fda-9567",
+            "formatRules": [
+              {
+                "name": "New Format Rule",
+                "id": "1d97-fa8c-e71b-451a",
+                "hidden": false,
+                "type": "regex",
+                "match": "^$",
+                "replace": "-",
+                "comment": "Empty → -"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Armour",
+        "id": "b33a-804c-a9f3-a27d",
+        "hidden": false,
+        "characteristicTypes": [
+          {
+            "name": "Armour",
+            "id": "6659-d351-381b-ac91"
+          },
+          {
+            "name": "Special",
+            "id": "4e35-37c5-7a60-0709"
+          }
+        ]
+      },
+      {
+        "name": "Spells",
+        "id": "863d-79bf-d614-427e",
+        "hidden": false,
+        "characteristicTypes": [
+          {
+            "name": "AP",
+            "id": "8200-e9a7-ce10-581a",
+            "defaultValue": ""
+          },
+          {
+            "name": "Channel",
+            "id": "327c-6c73-5dc5-7988"
+          },
+          {
+            "name": "Effect",
+            "id": "5a9d-b373-64bc-75dc"
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Basic Leader Trait",
+        "id": "95fb-52ee-1bb0-0f8c",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Unyielding Will",
+            "hidden": false,
+            "id": "60f8-67cb-3808-383a",
+            "profiles": [
+              {
+                "name": "Unyielding Will",
+                "typeId": "9087-e42b-f4e7-2001",
+                "typeName": "Abilities",
+                "hidden": false,
+                "id": "6680-b659-372c-fa21",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "typeId": "f11e-ca03-5b2a-f61b",
+                    "$text": "gain +2 max HP."
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 2,
+                "field": "851a-dd01-b57f-9383",
+                "scope": "root-entry",
+                "affects": "profiles.Unit"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Combatant",
+            "hidden": false,
+            "id": "aa4c-6b67-4091-e29b",
+            "profiles": [
+              {
+                "name": "Combatant",
+                "typeId": "9087-e42b-f4e7-2001",
+                "typeName": "Abilities",
+                "hidden": false,
+                "id": "dc3e-6600-391f-62d5",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "typeId": "f11e-ca03-5b2a-f61b",
+                    "$text": "improve violence by 1 (e.g. +7 becomes 6+)"
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "decrement",
+                "value": 1,
+                "field": "09a6-6cdb-ee74-e4d7",
+                "scope": "root-entry",
+                "affects": "profiles.Unit"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Perceptive",
+            "hidden": false,
+            "id": "ef6d-53b9-2137-7059",
+            "profiles": [
+              {
+                "name": "Perceptive",
+                "typeId": "9087-e42b-f4e7-2001",
+                "typeName": "Abilities",
+                "hidden": false,
+                "id": "70a7-d6b4-ffa8-f456",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "typeId": "f11e-ca03-5b2a-f61b",
+                    "$text": "improve ranged by 1 (e.g. +7 becomes 6+)"
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "decrement",
+                "value": 1,
+                "field": "8a1d-c563-4b54-9a31",
+                "scope": "root-entry",
+                "affects": "profiles.Unit"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Celerity",
+            "hidden": false,
+            "id": "0105-34bd-4e1f-0a90",
+            "profiles": [
+              {
+                "name": "Celerity",
+                "typeId": "9087-e42b-f4e7-2001",
+                "typeName": "Abilities",
+                "hidden": false,
+                "id": "e1fe-1813-33d0-e522",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "typeId": "f11e-ca03-5b2a-f61b",
+                    "$text": "improve move by 1"
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "f5bf-7829-484a-db1d",
+                "scope": "root-entry",
+                "affects": "profiles.Unit"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Stalwart",
+            "hidden": false,
+            "id": "c196-29e6-812a-3bb7",
+            "profiles": [
+              {
+                "name": "Stalwart",
+                "typeId": "9087-e42b-f4e7-2001",
+                "typeName": "Abilities",
+                "hidden": false,
+                "id": "bc92-f37c-694a-e44b",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "typeId": "f11e-ca03-5b2a-f61b",
+                    "$text": "reduce the distance this model is pushed by 1”, to a minimum of 1”"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sorcerous Talent",
+            "hidden": false,
+            "id": "10f2-884f-2d05-3495",
+            "profiles": [
+              {
+                "name": "Sorcerous Talent",
+                "typeId": "9087-e42b-f4e7-2001",
+                "typeName": "Abilities",
+                "hidden": false,
+                "id": "6064-ea63-046b-fb8d",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "typeId": "f11e-ca03-5b2a-f61b",
+                    "$text": "choose an additional mana point of any type"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Studious",
+            "hidden": false,
+            "id": "06ab-ad10-a1b0-080c",
+            "profiles": [
+              {
+                "name": "Studious",
+                "typeId": "9087-e42b-f4e7-2001",
+                "typeName": "Abilities",
+                "hidden": false,
+                "id": "ec31-0790-e0a6-62e4",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "typeId": "f11e-ca03-5b2a-f61b",
+                    "$text": "choose an additional spell of any type"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Regenerating Soul",
+            "hidden": false,
+            "id": "2285-80b9-18da-4ef8",
+            "profiles": [
+              {
+                "name": "Regenerating Soul",
+                "typeId": "9087-e42b-f4e7-2001",
+                "typeName": "Abilities",
+                "hidden": false,
+                "id": "d230-9811-9bfb-fa20",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "typeId": "f11e-ca03-5b2a-f61b",
+                    "$text": "each time this leader activates they restore 1 HP"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Spirit Syphon",
+            "hidden": false,
+            "id": "ea83-8e89-c4c0-14ab",
+            "profiles": [
+              {
+                "name": "Spirit Syphon",
+                "typeId": "9087-e42b-f4e7-2001",
+                "typeName": "Abilities",
+                "hidden": false,
+                "id": "9a91-5e07-a1df-2035",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "typeId": "f11e-ca03-5b2a-f61b",
+                    "$text": "if the leader inflicts any damage with melee attack actions, they restore 2 HP at the end of their activation"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Miserly",
+            "hidden": false,
+            "id": "8122-4392-6165-78ac",
+            "profiles": [
+              {
+                "name": "Miserly",
+                "typeId": "9087-e42b-f4e7-2001",
+                "typeName": "Abilities",
+                "hidden": false,
+                "id": "dd67-eca8-8258-f79c",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "typeId": "f11e-ca03-5b2a-f61b",
+                    "$text": "receive 50 obols, note this does not increase your initial deployment limit"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "3597-0241-c48d-b5b1-min",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "3597-0241-c48d-b5b1-max",
+            "includeChildSelections": false
+          }
+        ],
+        "defaultSelectionEntryId": "none"
+      },
+      {
+        "name": "Covenant",
+        "id": "66e5-1399-644e-8868",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Embalmed Hands",
+            "hidden": false,
+            "id": "1ac1-f1b2-2067-1ade",
+            "sortIndex": 1,
+            "rules": [
+              {
+                "name": "Scions of the Rotten Goddess",
+                "id": "6f68-158c-c1e3-6a95",
+                "hidden": false,
+                "description": "If you chose this covenant, your Gathering may only contains models with the Blood keyword\n\n\nYour leader gains the following trait in addition to any other\nChosen of the hand\n\n\nIn addition, one model may chose the following trait or a trait from the Wretched Undead list. Leaders may have up to 3 traits, including their Basic Leader Trait, minions may only have one type of Trait, and once taken they cannot be removed or sold.\n\nMarch of the hands"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Cairn-born",
+            "hidden": false,
+            "id": "ac6d-3b19-7fc4-ebad",
+            "sortIndex": 2,
+            "rules": [
+              {
+                "name": "Faithful of the First Grandlich",
+                "id": "f05e-8680-a107-9137",
+                "hidden": false,
+                "description": "If you chose this covenant, your Gathering may only contains models with the Bone keyword\n\n\nYour leader gains the following trait in addition to any other\nOsseous Sacrifice\n\nIn addition, one model may chose the following trait or a trait from the Wretched Undead list. Leaders may have up to 3 traits, including their Basic Leader Trait, minions may only have one type of Trait, and once taken they cannot be removed or sold.\n\nAdamant Structure"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "The Crescent of Mourn",
+            "hidden": false,
+            "id": "b40d-f8d9-74c9-6812",
+            "sortIndex": 3,
+            "rules": [
+              {
+                "name": "Spectres of the Doomed Child",
+                "id": "b982-badb-f8ff-c436",
+                "hidden": false,
+                "description": "If you chose this covenant, your Gathering may only contains models with the Plasm keyword\n\n\nYour leader gains the following trait in addition to any other\nMoonlight Flit\n\n\nIn addition, one model may chose the following trait or a trait from the Wretched Undead list. Leaders may have up to 3 traits, including their Basic Leader Trait, minions may only have one type of Trait, and once taken they cannot be removed or sold.\n\nMournful Curse"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Recusant Mafeficar",
+            "hidden": false,
+            "id": "898c-97ba-e7d8-5e20",
+            "sortIndex": 4,
+            "rules": [
+              {
+                "name": "Adherents of the Curse Path",
+                "id": "1123-e1c2-fb03-974d",
+                "hidden": false,
+                "description": "Your leader gains the following trait in addition to any other\nErudite\n\nIn addition, one model may chose the following trait or a trait from the Wretched Undead list. Leaders may have up to 3 traits, including their Basic Leader Trait, minions may only have one type of Trait, and once taken they cannot be removed or sold.\n\nApprentice"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Wretched Undead",
+            "hidden": false,
+            "id": "9123-1aeb-8337-b53c",
+            "sortIndex": 5,
+            "rules": [
+              {
+                "name": "The Lost, Abandoned and Forgotten",
+                "id": "ddb4-0876-3a42-8064",
+                "hidden": false,
+                "description": "Up to 2 models in this gathering may be chosen to have a trait from the Wretched Undead list"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Crawling-Dark",
+            "hidden": false,
+            "id": "7c40-3927-ac44-051e",
+            "sortIndex": 6,
+            "rules": [
+              {
+                "name": "Swarms of the Hintertombs",
+                "id": "fb3b-e8ea-0232-4c73",
+                "hidden": false,
+                "description": "Your leader gains the following trait in addition to any other\nCrawling Lord\n\n\n\nIn addition, one model may chose the following trait or a trait from the Wretched Undead list. Leaders may have up to 3 traits, including their Basic Leader Trait, minions may only have one type of Trait, and once taken they cannot be removed or sold.\n\n\nEternal Loyalty"
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "8ea9-4b0f-0bab-5083-min",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "8ea9-4b0f-0bab-5083-max",
+            "includeChildSelections": false
+          }
+        ],
+        "defaultSelectionEntryId": "none"
+      },
+      {
+        "name": "Weapons",
+        "id": "5481-cc2a-fd07-45ce",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Blade",
+            "hidden": false,
+            "id": "fda0-a647-3b29-a24e",
+            "profiles": [
+              {
+                "name": "Blade",
+                "typeId": "a950-f780-5e86-eb45",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "fa9f-cab5-ee19-2dc8",
+                "characteristics": [
+                  {
+                    "name": "Handed",
+                    "typeId": "7025-f808-11d5-2fd3",
+                    "$text": "1h"
+                  },
+                  {
+                    "name": "Range",
+                    "typeId": "5cfc-9542-21ef-a99f",
+                    "$text": "1\""
+                  },
+                  {
+                    "name": "Attacks",
+                    "typeId": "b94d-0abd-0f04-a2b7",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Damage",
+                    "typeId": "1851-9ed4-49ab-5337",
+                    "$text": "1/3"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "dbee-ea89-7fda-9567",
+                    "$text": "+1 armour against Attack actions from melee weapons"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "obols",
+                "typeId": "7bf0-2994-bf46-2ea8",
+                "value": 10
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "62fb-cd3d-9701-e2b8",
+                "includeChildSelections": false
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Axe",
+            "hidden": false,
+            "id": "3308-15f6-0391-4ef4",
+            "costs": [
+              {
+                "name": "obols",
+                "typeId": "7bf0-2994-bf46-2ea8",
+                "value": 10
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Axe",
+                "typeId": "a950-f780-5e86-eb45",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "b609-01a4-d7e3-0157",
+                "characteristics": [
+                  {
+                    "name": "Handed",
+                    "typeId": "7025-f808-11d5-2fd3",
+                    "$text": "1h"
+                  },
+                  {
+                    "name": "Range",
+                    "typeId": "5cfc-9542-21ef-a99f",
+                    "$text": "1\""
+                  },
+                  {
+                    "name": "Attacks",
+                    "typeId": "b94d-0abd-0f04-a2b7",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Damage",
+                    "typeId": "1851-9ed4-49ab-5337",
+                    "$text": "1/3"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "dbee-ea89-7fda-9567",
+                    "$text": "Ignore 1 armour"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c87d-0657-e346-a361",
+                "includeChildSelections": false
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Bludgeon",
+            "hidden": false,
+            "id": "8d4d-0660-0944-113c",
+            "costs": [
+              {
+                "name": "obols",
+                "typeId": "7bf0-2994-bf46-2ea8",
+                "value": 10
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Bludgeon",
+                "typeId": "a950-f780-5e86-eb45",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "04eb-6cff-ded6-31c7",
+                "characteristics": [
+                  {
+                    "name": "Handed",
+                    "typeId": "7025-f808-11d5-2fd3",
+                    "$text": "1h"
+                  },
+                  {
+                    "name": "Range",
+                    "typeId": "5cfc-9542-21ef-a99f",
+                    "$text": "1\""
+                  },
+                  {
+                    "name": "Attacks",
+                    "typeId": "b94d-0abd-0f04-a2b7",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Damage",
+                    "typeId": "1851-9ed4-49ab-5337",
+                    "$text": "1/3"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "dbee-ea89-7fda-9567",
+                    "$text": "May Push 2\" on hit instead of 1\""
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3b30-c271-4ae8-cacc",
+                "includeChildSelections": false
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Light Polearm",
+            "hidden": false,
+            "id": "70a9-0655-2a71-0a14",
+            "costs": [
+              {
+                "name": "obols",
+                "typeId": "7bf0-2994-bf46-2ea8",
+                "value": 10
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Light Polearm",
+                "typeId": "a950-f780-5e86-eb45",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "849e-bced-8c5f-6e15",
+                "characteristics": [
+                  {
+                    "name": "Handed",
+                    "typeId": "7025-f808-11d5-2fd3",
+                    "$text": "1h"
+                  },
+                  {
+                    "name": "Range",
+                    "typeId": "5cfc-9542-21ef-a99f",
+                    "$text": "2\""
+                  },
+                  {
+                    "name": "Attacks",
+                    "typeId": "b94d-0abd-0f04-a2b7",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Damage",
+                    "typeId": "1851-9ed4-49ab-5337",
+                    "$text": "1/3"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "dbee-ea89-7fda-9567",
+                    "$text": ""
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "55b9-a703-20ec-0a67",
+                "includeChildSelections": false
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Heavy Polearm",
+            "hidden": false,
+            "id": "fd35-783e-a4ef-d90a",
+            "costs": [
+              {
+                "name": "obols",
+                "typeId": "7bf0-2994-bf46-2ea8",
+                "value": 20
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Heavy Polearm",
+                "typeId": "a950-f780-5e86-eb45",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "3b1c-a400-a168-85c6",
+                "characteristics": [
+                  {
+                    "name": "Handed",
+                    "typeId": "7025-f808-11d5-2fd3",
+                    "$text": "2h"
+                  },
+                  {
+                    "name": "Range",
+                    "typeId": "5cfc-9542-21ef-a99f",
+                    "$text": "2\""
+                  },
+                  {
+                    "name": "Attacks",
+                    "typeId": "b94d-0abd-0f04-a2b7",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Damage",
+                    "typeId": "1851-9ed4-49ab-5337",
+                    "$text": "1/4"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "dbee-ea89-7fda-9567",
+                    "$text": ""
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "72c4-05e3-4e94-21e7",
+                "includeChildSelections": false
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "9408-6d6b-af42-7a6f",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Remnant"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Great Weapon",
+            "hidden": false,
+            "id": "394d-0ee7-a494-139b",
+            "costs": [
+              {
+                "name": "obols",
+                "typeId": "7bf0-2994-bf46-2ea8",
+                "value": 35
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Great Weapon",
+                "typeId": "a950-f780-5e86-eb45",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "1464-a324-14ab-3e90",
+                "characteristics": [
+                  {
+                    "name": "Handed",
+                    "typeId": "7025-f808-11d5-2fd3",
+                    "$text": "2h"
+                  },
+                  {
+                    "name": "Range",
+                    "typeId": "5cfc-9542-21ef-a99f",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Attacks",
+                    "typeId": "b94d-0abd-0f04-a2b7",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Damage",
+                    "typeId": "1851-9ed4-49ab-5337",
+                    "$text": "2/6"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "dbee-ea89-7fda-9567",
+                    "$text": ""
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c7e8-9aff-bd38-0ed9",
+                "includeChildSelections": false
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "9408-6d6b-af42-7a6f",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Remnant"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Dual Hand Weapons",
+            "hidden": false,
+            "id": "63d6-e956-d9d6-d511",
+            "profiles": [
+              {
+                "name": "Dual Hand Weapons",
+                "typeId": "a950-f780-5e86-eb45",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "f400-8581-e85d-b38d",
+                "characteristics": [
+                  {
+                    "name": "Handed",
+                    "typeId": "7025-f808-11d5-2fd3",
+                    "$text": "2h"
+                  },
+                  {
+                    "name": "Range",
+                    "typeId": "5cfc-9542-21ef-a99f",
+                    "$text": "1\""
+                  },
+                  {
+                    "name": "Attacks",
+                    "typeId": "b94d-0abd-0f04-a2b7",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Damage",
+                    "typeId": "1851-9ed4-49ab-5337",
+                    "$text": "1/3"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "dbee-ea89-7fda-9567",
+                    "$text": "-1 to Violence rolls"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "obols",
+                "typeId": "7bf0-2994-bf46-2ea8",
+                "value": 35
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "cdce-dd6b-8d60-5f24",
+                "includeChildSelections": false
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "9408-6d6b-af42-7a6f",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Remnant"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sling",
+            "hidden": false,
+            "id": "c3f4-399c-ac54-b6db",
+            "costs": [
+              {
+                "name": "Obols",
+                "typeId": "7bf0-2994-bf46-2ea8",
+                "value": 10
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Sling",
+                "typeId": "a950-f780-5e86-eb45",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "7497-c940-e2a8-f837",
+                "characteristics": [
+                  {
+                    "name": "Handed",
+                    "typeId": "7025-f808-11d5-2fd3",
+                    "$text": "2h"
+                  },
+                  {
+                    "name": "Range",
+                    "typeId": "5cfc-9542-21ef-a99f",
+                    "$text": "6\""
+                  },
+                  {
+                    "name": "Attacks",
+                    "typeId": "b94d-0abd-0f04-a2b7",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Damage",
+                    "typeId": "1851-9ed4-49ab-5337",
+                    "$text": "1/3"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "dbee-ea89-7fda-9567",
+                    "$text": ""
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2904-4759-d259-7cd9",
+                "includeChildSelections": false
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "9408-6d6b-af42-7a6f",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Remnant"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Crossbow",
+            "hidden": false,
+            "id": "b0d9-dc29-704d-ce39",
+            "costs": [
+              {
+                "name": "Obols",
+                "typeId": "7bf0-2994-bf46-2ea8",
+                "value": 40
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Crossbow",
+                "typeId": "a950-f780-5e86-eb45",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "9639-0186-4166-3adb",
+                "characteristics": [
+                  {
+                    "name": "Handed",
+                    "typeId": "7025-f808-11d5-2fd3",
+                    "$text": "2h"
+                  },
+                  {
+                    "name": "Range",
+                    "typeId": "5cfc-9542-21ef-a99f",
+                    "$text": "10\""
+                  },
+                  {
+                    "name": "Attacks",
+                    "typeId": "b94d-0abd-0f04-a2b7",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Damage",
+                    "typeId": "1851-9ed4-49ab-5337",
+                    "$text": "1/6"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "dbee-ea89-7fda-9567",
+                    "$text": "Only 1 attack action may be taken per activation"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ec16-00f0-ef91-feae",
+                "includeChildSelections": false
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "9408-6d6b-af42-7a6f",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Remnant"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Bow",
+            "hidden": false,
+            "id": "ea20-f725-f7c3-09e2",
+            "profiles": [
+              {
+                "name": "Bow",
+                "typeId": "a950-f780-5e86-eb45",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "2e31-79c5-ed68-2f1e",
+                "characteristics": [
+                  {
+                    "name": "Handed",
+                    "typeId": "7025-f808-11d5-2fd3",
+                    "$text": "2h"
+                  },
+                  {
+                    "name": "Range",
+                    "typeId": "5cfc-9542-21ef-a99f",
+                    "$text": "12\""
+                  },
+                  {
+                    "name": "Attacks",
+                    "typeId": "b94d-0abd-0f04-a2b7",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Damage",
+                    "typeId": "1851-9ed4-49ab-5337",
+                    "$text": "1/4"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "dbee-ea89-7fda-9567",
+                    "$text": "Only 1 Attack action may be taken per activation. Alternatively, a model armed with a bow can make ranged attacks with the Alt profile."
+                  }
+                ]
+              },
+              {
+                "name": "Bow (Alt)",
+                "typeId": "a950-f780-5e86-eb45",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "1eee-f680-5f8f-d1d0",
+                "characteristics": [
+                  {
+                    "name": "Handed",
+                    "typeId": "7025-f808-11d5-2fd3",
+                    "$text": "2h"
+                  },
+                  {
+                    "name": "Range",
+                    "typeId": "5cfc-9542-21ef-a99f",
+                    "$text": "6\""
+                  },
+                  {
+                    "name": "Attacks",
+                    "typeId": "b94d-0abd-0f04-a2b7",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Damage",
+                    "typeId": "1851-9ed4-49ab-5337",
+                    "$text": "1/3"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "dbee-ea89-7fda-9567",
+                    "$text": ""
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Obols",
+                "typeId": "7bf0-2994-bf46-2ea8",
+                "value": 30
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "4b85-6a18-2b57-47df",
+                "includeChildSelections": false
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "9408-6d6b-af42-7a6f",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Remnant"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "defaultSelectionEntryId": "63bc-615d-e7cf-fb19",
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "7f4a-dfe9-fd7a-28ce",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "cadb-7b0a-e19d-c2dc",
+            "includeChildSelections": false
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": 2,
+            "field": "cadb-7b0a-e19d-c2dc",
+            "affects": "self.entries",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "ancestor",
+                "childId": "default-category",
+                "shared": true,
+                "includeChildSelections": true,
+                "childName": "Leader"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Claws and Fangs",
+            "hidden": false,
+            "id": "ae26-1145-9d0b-4b96",
+            "type": "selectionEntry",
+            "targetId": "4ab4-66ef-4012-cf5e"
+          },
+          {
+            "import": true,
+            "name": "Improvised Weapon",
+            "hidden": false,
+            "id": "ae45-4bc7-aa22-a199",
+            "type": "selectionEntry",
+            "targetId": "63bc-615d-e7cf-fb19"
+          },
+          {
+            "import": true,
+            "name": "Large Claws",
+            "hidden": false,
+            "id": "7696-bc90-072b-8bff",
+            "type": "selectionEntry",
+            "targetId": "b68e-50b8-b323-08e7"
+          }
+        ]
+      },
+      {
+        "name": "Armour",
+        "id": "86de-afcc-fe2a-de70",
+        "hidden": false,
+        "selectionEntryGroups": [
+          {
+            "name": "Armours",
+            "id": "6cd3-2dc0-ce79-23de",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Light Armour",
+                "hidden": false,
+                "id": "b55c-1d3a-8f41-82db",
+                "profiles": [
+                  {
+                    "name": "Light Armour",
+                    "typeId": "b33a-804c-a9f3-a27d",
+                    "typeName": "Armour",
+                    "hidden": false,
+                    "id": "c45c-4fcd-6d13-64a4",
+                    "characteristics": [
+                      {
+                        "name": "Armour",
+                        "typeId": "6659-d351-381b-ac91",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Special",
+                        "typeId": "4e35-37c5-7a60-0709",
+                        "$text": ""
+                      }
+                    ]
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Obols",
+                    "typeId": "7bf0-2994-bf46-2ea8",
+                    "value": 20
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Heavy Armour",
+                "hidden": false,
+                "id": "d523-9db0-d10c-8277",
+                "profiles": [
+                  {
+                    "name": "Heavy Armour",
+                    "typeId": "b33a-804c-a9f3-a27d",
+                    "typeName": "Armour",
+                    "hidden": false,
+                    "id": "99b1-3d9f-965c-9997",
+                    "characteristics": [
+                      {
+                        "name": "Armour",
+                        "typeId": "6659-d351-381b-ac91",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Special",
+                        "typeId": "4e35-37c5-7a60-0709",
+                        "$text": ""
+                      }
+                    ]
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Obols",
+                    "typeId": "7bf0-2994-bf46-2ea8",
+                    "value": 50
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "ancestor",
+                            "childId": "27f3-4ecd-2d52-15d5",
+                            "shared": true,
+                            "childName": "Small Beast"
+                          }
+                        ],
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "instanceOf",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "ancestor",
+                                "childId": "3b8d-37a3-93c5-a35f",
+                                "shared": true,
+                                "childName": "Plasm"
+                              },
+                              {
+                                "type": "notInstanceOf",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "ancestor",
+                                "childId": "9408-6d6b-af42-7a6f",
+                                "shared": true,
+                                "childName": "Remnant"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3b25-99eb-923a-7541",
+                "includeChildSelections": false
+              }
+            ]
+          },
+          {
+            "name": "Shields",
+            "id": "53ef-82cc-697e-9514",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Shield",
+                "hidden": false,
+                "id": "5302-e74e-84c0-9472",
+                "profiles": [
+                  {
+                    "name": "Shield",
+                    "typeId": "b33a-804c-a9f3-a27d",
+                    "typeName": "Armour",
+                    "hidden": false,
+                    "id": "426c-0fc0-88a0-10a9",
+                    "characteristics": [
+                      {
+                        "name": "Armour",
+                        "typeId": "6659-d351-381b-ac91",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Special",
+                        "typeId": "4e35-37c5-7a60-0709",
+                        "$text": ""
+                      }
+                    ]
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Obols",
+                    "typeId": "7bf0-2994-bf46-2ea8",
+                    "value": 10
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Great Shield",
+                "hidden": false,
+                "id": "fb41-4689-fe22-0593",
+                "profiles": [
+                  {
+                    "name": "Great Shield",
+                    "typeId": "b33a-804c-a9f3-a27d",
+                    "typeName": "Armour",
+                    "hidden": false,
+                    "id": "7a3d-4eb8-a78e-04d6",
+                    "characteristics": [
+                      {
+                        "name": "Armour",
+                        "typeId": "6659-d351-381b-ac91",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Special",
+                        "typeId": "4e35-37c5-7a60-0709",
+                        "$text": "+1 armour against attack actions from ranged weapons and the model cannot be pushed by attacks from ranged attack actions"
+                      }
+                    ]
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Obols",
+                    "typeId": "7bf0-2994-bf46-2ea8",
+                    "value": 20
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "49c1-90d8-cdca-e6cf",
+                "includeChildSelections": false
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "ce2d-975a-98b2-ec8e",
+                        "shared": true,
+                        "childName": "Lich"
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "27f3-4ecd-2d52-15d5",
+                        "shared": true,
+                        "childName": "Small Beast"
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "66c9-c8ac-10fd-cc6e",
+                        "shared": true,
+                        "childName": "Large Beast"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Miscellaneous Equipment",
+        "id": "acbf-8117-8199-433d",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Wardart",
+            "hidden": false,
+            "id": "3e4a-f7c7-097a-b168",
+            "costs": [
+              {
+                "name": "Obols",
+                "typeId": "7bf0-2994-bf46-2ea8",
+                "value": 5
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Wardart",
+                "typeId": "a950-f780-5e86-eb45",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "8131-e8f1-6c96-d14b",
+                "characteristics": [
+                  {
+                    "name": "Handed",
+                    "typeId": "7025-f808-11d5-2fd3",
+                    "$text": "1h"
+                  },
+                  {
+                    "name": "Range",
+                    "typeId": "5cfc-9542-21ef-a99f",
+                    "$text": "6\""
+                  },
+                  {
+                    "name": "Attacks",
+                    "typeId": "b94d-0abd-0f04-a2b7",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Damage",
+                    "typeId": "1851-9ed4-49ab-5337",
+                    "$text": "1/4"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "dbee-ea89-7fda-9567",
+                    "$text": "This attack action can only be made once per game"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Throwing Axe or Mallet",
+            "hidden": false,
+            "id": "6100-b4a7-ffc6-06cc",
+            "costs": [
+              {
+                "name": "Obols",
+                "typeId": "7bf0-2994-bf46-2ea8",
+                "value": 5
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Throwing Axe or Mallet",
+                "typeId": "a950-f780-5e86-eb45",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "ff07-0309-a071-ab8c",
+                "characteristics": [
+                  {
+                    "name": "Handed",
+                    "typeId": "7025-f808-11d5-2fd3",
+                    "$text": "1h"
+                  },
+                  {
+                    "name": "Range",
+                    "typeId": "5cfc-9542-21ef-a99f",
+                    "$text": "4\""
+                  },
+                  {
+                    "name": "Attacks",
+                    "typeId": "b94d-0abd-0f04-a2b7",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Damage",
+                    "typeId": "1851-9ed4-49ab-5337",
+                    "$text": "1/5"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "dbee-ea89-7fda-9567",
+                    "$text": "This attack action can only be madeonce per game"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Rope and Hook",
+            "hidden": false,
+            "id": "a110-c655-de09-d124",
+            "costs": [
+              {
+                "name": "Obols",
+                "typeId": "7bf0-2994-bf46-2ea8",
+                "value": 5
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Rope and Hook",
+                "typeId": "9087-e42b-f4e7-2001",
+                "typeName": "Abilities",
+                "hidden": false,
+                "id": "a1ac-e77b-183c-0cbf",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "typeId": "f11e-ca03-5b2a-f61b",
+                    "$text": "Effect: The owner gains the following action. \n\n\nClimb AP cost: 2 - The model may move vertically up or down tr terrain up to twice the model’s movement"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Musical Instrument",
+            "hidden": false,
+            "id": "21a8-cbcb-a602-9d70",
+            "costs": [
+              {
+                "name": "Obols",
+                "typeId": "7bf0-2994-bf46-2ea8",
+                "value": 20
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Musical Instrument",
+                "typeId": "9087-e42b-f4e7-2001",
+                "typeName": "Abilities",
+                "hidden": false,
+                "id": "9df2-7c15-32ab-f117",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "typeId": "f11e-ca03-5b2a-f61b",
+                    "$text": "The owner gains the following action. \n\n\nToot Toot! AP cost: 1 - Choose a friendly model within 6’’ that has not activated this turn. You may activate that model immediately after the activation of this model ends"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Banner",
+            "hidden": false,
+            "id": "739b-3852-a5d7-4ecb",
+            "costs": [
+              {
+                "name": "Obols",
+                "typeId": "7bf0-2994-bf46-2ea8",
+                "value": 20
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Banner",
+                "typeId": "9087-e42b-f4e7-2001",
+                "typeName": "Abilities",
+                "hidden": false,
+                "id": "3d52-9d4b-ecb7-b875",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "typeId": "f11e-ca03-5b2a-f61b",
+                    "$text": "The owner gains the following action. \n\n\nPlant the Banner AP cost: 1 - Until the model’s next activation no friendly model within 3\" can be pushed as a result of an attack action"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "cacb-f595-779d-b6b4",
+            "includeChildSelections": false
+          }
+        ]
+      },
+      {
+        "name": "Spells",
+        "id": "00ca-adc9-7d0a-3e16",
+        "hidden": false,
+        "selectionEntryGroups": [
+          {
+            "name": "Necromancy",
+            "id": "3f15-e168-b301-4b4d",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Dominate",
+                "hidden": false,
+                "id": "151a-4623-9912-aa05",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "2435-90f2-4d6f-bee8",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Dominate",
+                    "typeId": "863d-79bf-d614-427e",
+                    "typeName": "Spells",
+                    "hidden": false,
+                    "id": "42ff-19aa-a54c-ea0b",
+                    "characteristics": [
+                      {
+                        "name": "AP",
+                        "typeId": "8200-e9a7-ce10-581a",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Channel",
+                        "typeId": "327c-6c73-5dc5-7988",
+                        "$text": "6+"
+                      },
+                      {
+                        "name": "Effect",
+                        "typeId": "5a9d-b373-64bc-75dc",
+                        "$text": "Activate any single NPC within 8\" as if they had 1/2 AP. This counts as the models activation, this model can no longer be activated in any other step"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Flare",
+                "hidden": false,
+                "id": "d333-7002-fad9-e0f8",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "659d-4329-c735-bccf",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Flare",
+                    "typeId": "863d-79bf-d614-427e",
+                    "typeName": "Spells",
+                    "hidden": false,
+                    "id": "01b1-2829-ff4a-2011",
+                    "characteristics": [
+                      {
+                        "name": "AP",
+                        "typeId": "8200-e9a7-ce10-581a",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Channel",
+                        "typeId": "327c-6c73-5dc5-7988",
+                        "$text": "6+"
+                      },
+                      {
+                        "name": "Effect",
+                        "typeId": "5a9d-b373-64bc-75dc",
+                        "$text": "Choose a mana token on the battlefield within 8’’ and line of sight: every model within 2’’ of the token suffers 1/3 damage. The mana token is then removed from play"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Puppet",
+                "hidden": false,
+                "id": "3888-71f8-d81a-20b3",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "11e8-e26f-143d-e0d0",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Puppet",
+                    "typeId": "863d-79bf-d614-427e",
+                    "typeName": "Spells",
+                    "hidden": false,
+                    "id": "1294-d73f-5e65-55fe",
+                    "characteristics": [
+                      {
+                        "name": "AP",
+                        "typeId": "8200-e9a7-ce10-581a",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Channel",
+                        "typeId": "327c-6c73-5dc5-7988",
+                        "$text": "6+"
+                      },
+                      {
+                        "name": "Effect",
+                        "typeId": "5a9d-b373-64bc-75dc",
+                        "$text": "Choose a model within 6’’ and line of sight: push that model 1\"/3\""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Vigour",
+                "hidden": false,
+                "id": "3340-01e7-a1bd-6822",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "579d-a780-98da-712b",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Vigour",
+                    "typeId": "863d-79bf-d614-427e",
+                    "typeName": "Spells",
+                    "hidden": false,
+                    "id": "36e5-8427-9b86-6000",
+                    "characteristics": [
+                      {
+                        "name": "AP",
+                        "typeId": "8200-e9a7-ce10-581a",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Channel",
+                        "typeId": "327c-6c73-5dc5-7988",
+                        "$text": "7+"
+                      },
+                      {
+                        "name": "Effect",
+                        "typeId": "5a9d-b373-64bc-75dc",
+                        "$text": "Restore 3/5 hp to a model in 6’’ and line of sight of the caster"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Wither",
+                "hidden": false,
+                "id": "913d-6c61-61d3-2f2b",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "327a-788b-d450-1925",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Wither",
+                    "typeId": "863d-79bf-d614-427e",
+                    "typeName": "Spells",
+                    "hidden": false,
+                    "id": "9d11-2da7-cbdf-3d7f",
+                    "characteristics": [
+                      {
+                        "name": "AP",
+                        "typeId": "8200-e9a7-ce10-581a",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Channel",
+                        "typeId": "327c-6c73-5dc5-7988",
+                        "$text": "5+"
+                      },
+                      {
+                        "name": "Effect",
+                        "typeId": "5a9d-b373-64bc-75dc",
+                        "$text": "Choose a model in 6’’ and line of sight, it suffers 1/4 damage"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Blood",
+            "id": "22c0-f359-5180-4668",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Blood Whip",
+                "hidden": false,
+                "id": "8e4c-318f-344e-37f2",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0e11-0404-7f36-dd88",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Blood Whip",
+                    "typeId": "863d-79bf-d614-427e",
+                    "typeName": "Spells",
+                    "hidden": false,
+                    "id": "9790-e649-a953-8d47",
+                    "characteristics": [
+                      {
+                        "name": "AP",
+                        "typeId": "8200-e9a7-ce10-581a",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Channel",
+                        "typeId": "327c-6c73-5dc5-7988",
+                        "$text": "7+"
+                      },
+                      {
+                        "name": "Effect",
+                        "typeId": "5a9d-b373-64bc-75dc",
+                        "$text": "Choose any model with the Blood keyword within 3’’ and line of sight The model suffers 1 damage.\nThe caster may then make a melee attack with attacks 1/2*, damage 2/4, range 3” \n*Number of attacks based on spell success"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Congealed Blast",
+                "hidden": false,
+                "id": "0906-d7f6-5bb0-ad1d",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "c119-6a28-94a6-3a71",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Congealed Blast",
+                    "typeId": "863d-79bf-d614-427e",
+                    "typeName": "Spells",
+                    "hidden": false,
+                    "id": "a4b2-1921-24a0-0a74",
+                    "characteristics": [
+                      {
+                        "name": "AP",
+                        "typeId": "8200-e9a7-ce10-581a",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Channel",
+                        "typeId": "327c-6c73-5dc5-7988",
+                        "$text": "7+"
+                      },
+                      {
+                        "name": "Effect",
+                        "typeId": "5a9d-b373-64bc-75dc",
+                        "$text": "Choose any model with the Blood keyword within 8’’ and line of sight, it suffers 2/4 damage. Every\nmodel within 2” of that model also suffers 2/4 damage. If the initial target is Shattered by the\ndamage the secondary targets suffer an additional 1 damage"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Invigorate",
+                "hidden": false,
+                "id": "e343-2fbb-d177-b8e0",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "cb65-6a3c-daa3-c4ac",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Invigorate",
+                    "typeId": "863d-79bf-d614-427e",
+                    "typeName": "Spells",
+                    "hidden": false,
+                    "id": "1a5f-ef69-5ef9-18c4",
+                    "characteristics": [
+                      {
+                        "name": "AP",
+                        "typeId": "8200-e9a7-ce10-581a",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Channel",
+                        "typeId": "327c-6c73-5dc5-7988",
+                        "$text": "5+"
+                      },
+                      {
+                        "name": "Effect",
+                        "typeId": "5a9d-b373-64bc-75dc",
+                        "$text": "Choose a friendly model within 3’’/6’’ and line of sight with the Blood keyword, they may make a free move action"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Tide Vermin",
+                "hidden": false,
+                "id": "c25d-0a5b-82d9-6ad3",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "cfa6-0bcc-ad47-cb8b",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Tide Vermin",
+                    "typeId": "863d-79bf-d614-427e",
+                    "typeName": "Spells",
+                    "hidden": false,
+                    "id": "a17d-7175-7379-3374",
+                    "characteristics": [
+                      {
+                        "name": "AP",
+                        "typeId": "8200-e9a7-ce10-581a",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Channel",
+                        "typeId": "327c-6c73-5dc5-7988",
+                        "$text": "6+"
+                      },
+                      {
+                        "name": "Effect",
+                        "typeId": "5a9d-b373-64bc-75dc",
+                        "$text": "Choose 1/2 model/s within 8’’ and line of sight, they suffer 1/2 damage then you may push them 1’’/2’’."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Bone",
+            "id": "ac85-eb5b-a4a9-3913",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Bone Armour",
+                "hidden": false,
+                "id": "565d-e19b-c1a0-1e67",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "27ad-88b9-02b8-3c5a",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Bone Armour",
+                    "typeId": "863d-79bf-d614-427e",
+                    "typeName": "Spells",
+                    "hidden": false,
+                    "id": "0c7a-d395-a92a-cd00",
+                    "characteristics": [
+                      {
+                        "name": "AP",
+                        "typeId": "8200-e9a7-ce10-581a",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Channel",
+                        "typeId": "327c-6c73-5dc5-7988",
+                        "$text": "6+"
+                      },
+                      {
+                        "name": "Effect",
+                        "typeId": "5a9d-b373-64bc-75dc",
+                        "$text": "Choose any friendly model with the Bone keyword within 3’’ and line of sight, it suffers4/6 damage. The caster is then armour +1/+2 for the rest of the game. This spell may only be cast once per game"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Bone Spear",
+                "hidden": false,
+                "id": "16b3-bddc-2a68-5c74",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "47ac-b0b7-3060-381b",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Bone Spear",
+                    "typeId": "863d-79bf-d614-427e",
+                    "typeName": "Spells",
+                    "hidden": false,
+                    "id": "a1ac-e376-fd49-c6cc",
+                    "characteristics": [
+                      {
+                        "name": "AP",
+                        "typeId": "8200-e9a7-ce10-581a",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Channel",
+                        "typeId": "327c-6c73-5dc5-7988",
+                        "$text": "6+"
+                      },
+                      {
+                        "name": "Effect",
+                        "typeId": "5a9d-b373-64bc-75dc",
+                        "$text": "Choose any model with the Bone keyword within5’’ and line of sight, it suffers 2 damage. The caster may then make a ranged attack with the following\n"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Bone Spear",
+                    "typeId": "a950-f780-5e86-eb45",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "9cb4-0550-d5a3-2e67",
+                    "characteristics": [
+                      {
+                        "name": "Handed",
+                        "typeId": "7025-f808-11d5-2fd3",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Range",
+                        "typeId": "5cfc-9542-21ef-a99f",
+                        "$text": "6\""
+                      },
+                      {
+                        "name": "Attacks",
+                        "typeId": "b94d-0abd-0f04-a2b7",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Damage",
+                        "typeId": "1851-9ed4-49ab-5337",
+                        "$text": "3/6"
+                      },
+                      {
+                        "name": "Special",
+                        "typeId": "dbee-ea89-7fda-9567",
+                        "$text": "*If the channeling roll is a success the attack gains +1/+1 damage"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Teeth",
+                "hidden": false,
+                "id": "807d-36f0-cf9c-4fa2",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f8e7-3363-a92b-9b23",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Teeth",
+                    "typeId": "863d-79bf-d614-427e",
+                    "typeName": "Spells",
+                    "hidden": false,
+                    "id": "0a94-b2a2-1700-8456",
+                    "characteristics": [
+                      {
+                        "name": "AP",
+                        "typeId": "8200-e9a7-ce10-581a",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Channel",
+                        "typeId": "327c-6c73-5dc5-7988",
+                        "$text": "6+"
+                      },
+                      {
+                        "name": "Effect",
+                        "typeId": "5a9d-b373-64bc-75dc",
+                        "$text": "Choose any model with the Bone Keyword within 3’’ and line of sight, the model suffers 1damage. Then choose up to 1/2 additional models within 3’’of that model, the caster may then make a ranged attack against each with the following profile"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Teeth",
+                    "typeId": "a950-f780-5e86-eb45",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "7435-2fb6-4044-bdf9",
+                    "characteristics": [
+                      {
+                        "name": "Handed",
+                        "typeId": "7025-f808-11d5-2fd3",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Range",
+                        "typeId": "5cfc-9542-21ef-a99f",
+                        "$text": "6\""
+                      },
+                      {
+                        "name": "Attacks",
+                        "typeId": "b94d-0abd-0f04-a2b7",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Damage",
+                        "typeId": "1851-9ed4-49ab-5337",
+                        "$text": "1/4"
+                      },
+                      {
+                        "name": "Special",
+                        "typeId": "dbee-ea89-7fda-9567",
+                        "$text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Tireless Command",
+                "hidden": false,
+                "id": "0ae6-5eb4-c0a9-a797",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d3de-9b86-379a-4cab",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Tireless Command",
+                    "typeId": "863d-79bf-d614-427e",
+                    "typeName": "Spells",
+                    "hidden": false,
+                    "id": "e508-5deb-7e97-7f36",
+                    "characteristics": [
+                      {
+                        "name": "AP",
+                        "typeId": "8200-e9a7-ce10-581a",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Channel",
+                        "typeId": "327c-6c73-5dc5-7988",
+                        "$text": "7+"
+                      },
+                      {
+                        "name": "Effect",
+                        "typeId": "5a9d-b373-64bc-75dc",
+                        "$text": "Choose a friendly model with the Bone keyword within 3’’/5’’ and line of sight, they may make a free attack action with a melee weapon"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Plasm",
+            "id": "0190-bbed-d272-a19d",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Blink",
+                "hidden": false,
+                "id": "70e7-726a-b1f2-e04a",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "eb22-3a29-1d69-9a7a",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Blink",
+                    "typeId": "863d-79bf-d614-427e",
+                    "typeName": "Spells",
+                    "hidden": false,
+                    "id": "0192-4f2e-5f8a-969a",
+                    "characteristics": [
+                      {
+                        "name": "AP",
+                        "typeId": "8200-e9a7-ce10-581a",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Channel",
+                        "typeId": "327c-6c73-5dc5-7988",
+                        "$text": "7+"
+                      },
+                      {
+                        "name": "Effect",
+                        "typeId": "5a9d-b373-64bc-75dc",
+                        "$text": "Choose a friendly model within 3’’ and line of sight, push that model 3’’/5’’ as if it had the fly\nkeyword"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Phantasm",
+                "hidden": false,
+                "id": "79ad-9b15-4e4a-6f9c",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "10aa-ed58-92ce-a2ab",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Phantasm",
+                    "typeId": "863d-79bf-d614-427e",
+                    "typeName": "Spells",
+                    "hidden": false,
+                    "id": "d9eb-3fe2-1cb1-430d",
+                    "characteristics": [
+                      {
+                        "name": "AP",
+                        "typeId": "8200-e9a7-ce10-581a",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Channel",
+                        "typeId": "327c-6c73-5dc5-7988",
+                        "$text": "7+"
+                      },
+                      {
+                        "name": "Effect",
+                        "typeId": "5a9d-b373-64bc-75dc",
+                        "$text": "Place a friendly phantasm model within 2’’/5’’ of the caster. This phantasm disappears at the end\nof the battle. This spell can only be cast once per scenario"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Phantasm",
+                    "typeId": "9272-a60a-c387-53cb",
+                    "typeName": "Unit",
+                    "hidden": false,
+                    "id": "4cdc-5c72-ce6e-c6e9",
+                    "characteristics": [
+                      {
+                        "name": "AP",
+                        "typeId": "838d-3831-326a-d543",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "M",
+                        "typeId": "f5bf-7829-484a-db1d",
+                        "$text": "5"
+                      },
+                      {
+                        "name": "Violence",
+                        "typeId": "09a6-6cdb-ee74-e4d7",
+                        "$text": "-"
+                      },
+                      {
+                        "name": "Ranged",
+                        "typeId": "8a1d-c563-4b54-9a31",
+                        "$text": "-"
+                      },
+                      {
+                        "name": "HP",
+                        "typeId": "851a-dd01-b57f-9383",
+                        "$text": "10"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Plasmic Emberburst",
+                "hidden": false,
+                "id": "9300-3c05-c04e-e22e",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "4f05-456a-8db9-2dd9",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Plasmic Emberburst",
+                    "typeId": "863d-79bf-d614-427e",
+                    "typeName": "Spells",
+                    "hidden": false,
+                    "id": "d43d-bd3c-14ef-7e82",
+                    "characteristics": [
+                      {
+                        "name": "AP",
+                        "typeId": "8200-e9a7-ce10-581a",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Channel",
+                        "typeId": "327c-6c73-5dc5-7988",
+                        "$text": "6+"
+                      },
+                      {
+                        "name": "Effect",
+                        "typeId": "5a9d-b373-64bc-75dc",
+                        "$text": "Every model (besides the caster) within 3’’ suffers 1/3 damage and is pushed 3’’ directly away from the caster"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Plasmic Shield",
+                "hidden": false,
+                "id": "5a3b-f725-c674-af09",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3c0f-56b3-fe9b-ea9f",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Plasmic Shield",
+                    "typeId": "863d-79bf-d614-427e",
+                    "typeName": "Spells",
+                    "hidden": false,
+                    "id": "a5a0-afb3-8854-060a",
+                    "characteristics": [
+                      {
+                        "name": "AP",
+                        "typeId": "8200-e9a7-ce10-581a",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Channel",
+                        "typeId": "327c-6c73-5dc5-7988",
+                        "$text": "5+"
+                      },
+                      {
+                        "name": "Effect",
+                        "typeId": "5a9d-b373-64bc-75dc",
+                        "$text": "Select a model within 3/6” and line of sight, that model has +1 armour up to a maximum of 4 until the casters next activation"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Spectral Pull",
+                "hidden": false,
+                "id": "e8d6-75dd-ff10-48cf",
+                "profiles": [
+                  {
+                    "name": "Spectral Pull",
+                    "typeId": "863d-79bf-d614-427e",
+                    "typeName": "Spells",
+                    "hidden": false,
+                    "id": "0205-e2ed-6d76-2fe4",
+                    "characteristics": [
+                      {
+                        "name": "AP",
+                        "typeId": "8200-e9a7-ce10-581a",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Channel",
+                        "typeId": "327c-6c73-5dc5-7988",
+                        "$text": "6+"
+                      },
+                      {
+                        "name": "Effect",
+                        "typeId": "5a9d-b373-64bc-75dc",
+                        "$text": "Push an objective or relic model within 4’’/7’’ and line of sight 3’’."
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "bd49-5fc8-4d0f-c69a",
+                    "includeChildSelections": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 3,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "0e5d-6f41-f4f1-df91",
+            "includeChildSelections": true
+          },
+          {
+            "type": "min",
+            "value": 3,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "8e74-dd4f-7b08-c2f5",
+            "includeChildSelections": true
+          }
+        ],
+        "defaultSelectionEntryId": "none",
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 1,
+                "field": "0e5d-6f41-f4f1-df91"
+              },
+              {
+                "type": "set",
+                "value": 1,
+                "field": "8e74-dd4f-7b08-c2f5"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "ancestor",
+                "childId": "13e1-0cf0-c00a-70b9",
+                "shared": true,
+                "childName": "Revenant"
+              }
+            ]
+          },
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "0e5d-6f41-f4f1-df91"
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "8e74-dd4f-7b08-c2f5"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "06ab-ad10-a1b0-080c",
+                "shared": true,
+                "childName": "Studious",
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Colossal Weapons",
+        "id": "76e6-c41d-4215-62d7",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Improvised Weapon",
+            "hidden": false,
+            "id": "4b89-c73c-ecda-620c",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2eea-ae97-778e-c888",
+                "includeChildSelections": false
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Improvised Weapon",
+                "typeId": "a950-f780-5e86-eb45",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "321c-34e8-62c7-f6ac",
+                "characteristics": [
+                  {
+                    "name": "Handed",
+                    "typeId": "7025-f808-11d5-2fd3",
+                    "$text": "1h"
+                  },
+                  {
+                    "name": "Range",
+                    "typeId": "5cfc-9542-21ef-a99f",
+                    "$text": "2\""
+                  },
+                  {
+                    "name": "Attacks",
+                    "typeId": "b94d-0abd-0f04-a2b7",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Damage",
+                    "typeId": "1851-9ed4-49ab-5337",
+                    "$text": "2/4"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "dbee-ea89-7fda-9567",
+                    "$text": ""
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 0,
+                "field": "2eea-ae97-778e-c888",
+                "conditions": [
+                  {
+                    "type": "greaterThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "5481-cc2a-fd07-45ce",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Weapons",
+                    "includeChildForces": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Massive Hand Weapon",
+            "hidden": false,
+            "id": "d3a6-512f-0c5d-d275",
+            "costs": [
+              {
+                "name": "Obols",
+                "typeId": "7bf0-2994-bf46-2ea8",
+                "value": 10
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b3c5-a31f-5903-6939",
+                "includeChildSelections": false
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Massive Hand Weapon",
+                "typeId": "a950-f780-5e86-eb45",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "2d53-bc39-e1b0-f4a4",
+                "characteristics": [
+                  {
+                    "name": "Handed",
+                    "typeId": "7025-f808-11d5-2fd3",
+                    "$text": "1h"
+                  },
+                  {
+                    "name": "Range",
+                    "typeId": "5cfc-9542-21ef-a99f",
+                    "$text": "2\""
+                  },
+                  {
+                    "name": "Attacks",
+                    "typeId": "b94d-0abd-0f04-a2b7",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Damage",
+                    "typeId": "1851-9ed4-49ab-5337",
+                    "$text": "2/4"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "dbee-ea89-7fda-9567",
+                    "$text": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Colossal Weapon",
+            "hidden": false,
+            "id": "121b-6a40-bea7-32be",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "937d-4a1f-3feb-0dd9",
+                "includeChildSelections": false
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Colossal Weapon",
+                "typeId": "a950-f780-5e86-eb45",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "589b-e194-9503-5da9",
+                "characteristics": [
+                  {
+                    "name": "Handed",
+                    "typeId": "7025-f808-11d5-2fd3",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Range",
+                    "typeId": "5cfc-9542-21ef-a99f",
+                    "$text": "2\""
+                  },
+                  {
+                    "name": "Attacks",
+                    "typeId": "b94d-0abd-0f04-a2b7",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Damage",
+                    "typeId": "1851-9ed4-49ab-5337",
+                    "$text": "3/7"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "dbee-ea89-7fda-9567",
+                    "$text": ""
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Obols",
+                "typeId": "7bf0-2994-bf46-2ea8",
+                "value": 40
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Dual Massive Weapons",
+            "hidden": false,
+            "id": "4dc7-e774-b103-1041",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1fc0-ad41-a1f4-384f",
+                "includeChildSelections": false
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Dual Massive Weapons",
+                "typeId": "a950-f780-5e86-eb45",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "cd5f-c5c4-9155-cb0b",
+                "characteristics": [
+                  {
+                    "name": "Handed",
+                    "typeId": "7025-f808-11d5-2fd3",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Range",
+                    "typeId": "5cfc-9542-21ef-a99f",
+                    "$text": "2\""
+                  },
+                  {
+                    "name": "Attacks",
+                    "typeId": "b94d-0abd-0f04-a2b7",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Damage",
+                    "typeId": "1851-9ed4-49ab-5337",
+                    "$text": "2/4"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "dbee-ea89-7fda-9567",
+                    "$text": "-1 to Violence rolls."
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Obols",
+                "typeId": "7bf0-2994-bf46-2ea8",
+                "value": 40
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Massive Claws",
+            "hidden": false,
+            "id": "0772-603a-31f3-2a5f",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d50d-750e-c21d-e36e",
+                "includeChildSelections": false
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Massive Claws",
+                "typeId": "a950-f780-5e86-eb45",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "47cd-cedb-538d-19ae",
+                "characteristics": [
+                  {
+                    "name": "Handed",
+                    "typeId": "7025-f808-11d5-2fd3",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Range",
+                    "typeId": "5cfc-9542-21ef-a99f",
+                    "$text": "2\""
+                  },
+                  {
+                    "name": "Attacks",
+                    "typeId": "b94d-0abd-0f04-a2b7",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Damage",
+                    "typeId": "1851-9ed4-49ab-5337",
+                    "$text": "3/7"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "dbee-ea89-7fda-9567",
+                    "$text": ""
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Obols",
+                "typeId": "7bf0-2994-bf46-2ea8",
+                "value": 40
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Massive Ranged Weapon",
+            "hidden": false,
+            "id": "8d59-8447-0396-cc40",
+            "costs": [
+              {
+                "name": "Obols",
+                "typeId": "7bf0-2994-bf46-2ea8",
+                "value": 40
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f7e5-1170-2108-c93e",
+                "includeChildSelections": false
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Massive Ranged Weapon",
+                "typeId": "a950-f780-5e86-eb45",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "86ea-9513-a273-c675",
+                "characteristics": [
+                  {
+                    "name": "Handed",
+                    "typeId": "7025-f808-11d5-2fd3",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Range",
+                    "typeId": "5cfc-9542-21ef-a99f",
+                    "$text": "24\""
+                  },
+                  {
+                    "name": "Attacks",
+                    "typeId": "b94d-0abd-0f04-a2b7",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Damage",
+                    "typeId": "1851-9ed4-49ab-5337",
+                    "$text": "3/8"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "dbee-ea89-7fda-9567",
+                    "$text": "May Push 2\". Only 1 Attack action maybe taken per activation"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "defaultSelectionEntryId": "4b89-c73c-ecda-620c",
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "7c42-5b15-52ba-613d",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "1529-adf1-3325-40e4",
+            "includeChildSelections": false
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": 2,
+            "field": "1529-adf1-3325-40e4",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "ancestor",
+                "childId": "default-category",
+                "shared": true,
+                "includeChildSelections": true,
+                "childName": "Leader"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Keyword",
+        "id": "0ea3-5549-161a-2105",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Blood",
+            "hidden": false,
+            "id": "fef7-01eb-af98-91a1",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "b40d-f8d9-74c9-6812",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "childName": "The Crescent of Mourn"
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "ac6d-3b19-7fc4-ebad",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "childName": "Cairn-born"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 2,
+                "field": "851a-dd01-b57f-9383",
+                "scope": "root-entry",
+                "affects": "profiles.Unit",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "fef7-01eb-af98-91a1",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "childName": "Blood"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "ancestor",
+                            "childId": "d28f-2a3d-ed6e-c6fe",
+                            "shared": true,
+                            "childName": "Husk"
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "ancestor",
+                            "childId": "default-category",
+                            "shared": true,
+                            "childName": "Leader"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "add",
+                "value": "3754-d03b-a0b5-1e66",
+                "field": "category",
+                "scope": "root-entry"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Bone",
+            "hidden": false,
+            "id": "fa1f-6b6d-6af0-1372",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "b40d-f8d9-74c9-6812",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "childName": "The Crescent of Mourn"
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "1ac1-f1b2-2067-1ade",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "childName": "Embalmed Hands"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "decrement",
+                "value": 1,
+                "field": "09a6-6cdb-ee74-e4d7",
+                "scope": "root-entry",
+                "affects": "profiles.Unit",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "fa1f-6b6d-6af0-1372",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "childName": "Bone"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "ancestor",
+                            "childId": "d28f-2a3d-ed6e-c6fe",
+                            "shared": true,
+                            "childName": "Husk"
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "ancestor",
+                            "childId": "default-category",
+                            "shared": true,
+                            "childName": "Leader"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "add",
+                "value": "3bae-4986-a0b2-b480",
+                "field": "category",
+                "scope": "root-entry"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Plasm",
+            "hidden": false,
+            "id": "f1cb-1545-7e1e-d721",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "1ac1-f1b2-2067-1ade",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "childName": "Embalmed Hands"
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "ac6d-3b19-7fc4-ebad",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "childName": "Cairn-born"
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "66c9-c8ac-10fd-cc6e",
+                        "shared": true,
+                        "childName": "Large Beast"
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "b5af-56cf-d76e-e87c",
+                        "shared": true,
+                        "childName": "Flying Beast"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "add",
+                "value": "3b8d-37a3-93c5-a35f",
+                "field": "category",
+                "scope": "root-entry"
+              },
+              {
+                "type": "add",
+                "value": "8584-434d-f7a8-0ac4",
+                "field": "category",
+                "scope": "root-entry"
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "type": "decrement",
+                    "value": 2,
+                    "field": "851a-dd01-b57f-9383",
+                    "scope": "root-entry",
+                    "affects": "profiles.Unit"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "f1cb-1545-7e1e-d721",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Plasm"
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "9408-6d6b-af42-7a6f",
+                    "shared": true,
+                    "childName": "Remnant",
+                    "includeChildSelections": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "edee-b2a2-8ae2-3872",
+                    "shared": true,
+                    "childName": "Familiar"
+                  }
+                ]
+              },
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "type": "decrement",
+                    "value": 1,
+                    "field": "851a-dd01-b57f-9383",
+                    "scope": "root-entry",
+                    "affects": "profiles.Unit"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "9408-6d6b-af42-7a6f",
+                    "shared": true,
+                    "childName": "Remnant",
+                    "includeChildSelections": true
+                  },
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "f1cb-1545-7e1e-d721",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Plasm"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "92f1-7b6a-6064-9682",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "3a29-9e30-af0b-fe7c",
+            "includeChildSelections": false
+          }
+        ],
+        "defaultSelectionEntryId": "none",
+        "modifiers": [
+          {
+            "type": "set",
+            "value": "f1cb-1545-7e1e-d721",
+            "field": "defaultSelectionEntryId",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "b40d-f8d9-74c9-6812",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true,
+                "childName": "The Crescent of Mourn"
+              }
+            ]
+          },
+          {
+            "type": "set",
+            "value": "fef7-01eb-af98-91a1",
+            "field": "defaultSelectionEntryId",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "1ac1-f1b2-2067-1ade",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true,
+                "childName": "Embalmed Hands"
+              }
+            ]
+          },
+          {
+            "type": "set",
+            "value": "fa1f-6b6d-6af0-1372",
+            "field": "defaultSelectionEntryId",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "ac6d-3b19-7fc4-ebad",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true,
+                "childName": "Cairn-born"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Traits",
+        "id": "930e-1703-aaa1-5502",
+        "hidden": false,
+        "selectionEntryGroups": [
+          {
+            "name": "Covenant Traits",
+            "id": "3554-28ff-2eb0-bc51",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Chosen of the Hands",
+                "hidden": false,
+                "id": "a86f-4af8-9fb8-3039",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b063-1c91-4c9b-e128"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9a13-ad73-68e8-b0f8",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Chosen of the Hands",
+                    "typeId": "9087-e42b-f4e7-2001",
+                    "typeName": "Abilities",
+                    "hidden": false,
+                    "id": "8ad5-0fd3-5e7e-5fea",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "f11e-ca03-5b2a-f61b",
+                        "$text": "When this gathering receives blood mana dicefor its mana pool this model restores 2hp"
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "lessThan",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "1ac1-f1b2-2067-1ade",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true,
+                            "childName": "Embalmed Hands"
+                          },
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "ancestor",
+                            "childId": "default-category",
+                            "shared": true,
+                            "childName": "Leader"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "b063-1c91-4c9b-e128",
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "1ac1-f1b2-2067-1ade",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true,
+                            "childName": "Embalmed Hands"
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "ancestor",
+                            "childId": "default-category",
+                            "shared": true,
+                            "childName": "Leader"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "March of the Hands",
+                "hidden": false,
+                "id": "8d4d-3bff-f879-a936",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "roster",
+                    "shared": true,
+                    "id": "0e85-d6ca-a706-72e4",
+                    "includeChildSelections": true,
+                    "includeChildForces": true
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "March of the Hands",
+                    "typeId": "9087-e42b-f4e7-2001",
+                    "typeName": "Abilities",
+                    "hidden": false,
+                    "id": "c42a-a0e7-7db7-da3f",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "f11e-ca03-5b2a-f61b",
+                        "$text": "On the first turn, before rolling for initiative, you may push this model 4’’."
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "lessThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "1ac1-f1b2-2067-1ade",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "childName": "Embalmed Hands"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Osseous Sacrifice",
+                "hidden": false,
+                "id": "e80a-1e40-22e5-cdcb",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6f85-fa1b-bf95-327d",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ac8c-6947-a0b3-ac4b",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Osseous Sacrifice",
+                    "typeId": "9087-e42b-f4e7-2001",
+                    "typeName": "Abilities",
+                    "hidden": false,
+                    "id": "1783-7181-2eac-f41a",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "f11e-ca03-5b2a-f61b",
+                        "$text": "On activation you may choose to suffer 2 damage and then Bone school spells gain +1 to any damage dealt that activation. This additional damage does not affect friendly models"
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "lessThan",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "ac6d-3b19-7fc4-ebad",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true,
+                            "childName": "Cairn-born"
+                          },
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "ancestor",
+                            "childId": "default-category",
+                            "shared": true,
+                            "childName": "Leader"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "ac8c-6947-a0b3-ac4b",
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "ac6d-3b19-7fc4-ebad",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true,
+                            "childName": "Cairn-born"
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "ancestor",
+                            "childId": "default-category",
+                            "shared": true,
+                            "childName": "Leader"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Adamant Structure",
+                "hidden": false,
+                "id": "ff3e-2ba8-927f-33bd",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "roster",
+                    "shared": true,
+                    "id": "a6a2-a782-e3a2-7dc0",
+                    "includeChildSelections": true
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Adamant Structure",
+                    "typeId": "9087-e42b-f4e7-2001",
+                    "typeName": "Abilities",
+                    "hidden": false,
+                    "id": "1426-cf65-f0cb-32c6",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "f11e-ca03-5b2a-f61b",
+                        "$text": "When this model ‘suffers’ damage, e.g. as a result of falling, dangerous terrain or spellcasting, that damage is reduced by 1 to a minimum of 1. This is not armour and has no effect against attacks."
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "lessThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "ac6d-3b19-7fc4-ebad",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "childName": "Cairn-born"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Moonlight Flit",
+                "hidden": false,
+                "id": "5cfb-9176-969c-6388",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "cc45-b485-0322-b0bd",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fd9d-6cce-bb7e-efb9",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Moonlight Flit",
+                    "typeId": "9087-e42b-f4e7-2001",
+                    "typeName": "Abilities",
+                    "hidden": false,
+                    "id": "7b36-3da8-cc07-815e",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "f11e-ca03-5b2a-f61b",
+                        "$text": "After an enemy attack action and any subsequent pushes have been resolved against your leader you may push your leader up to 2’’."
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "ancestor",
+                            "childId": "default-category",
+                            "shared": true,
+                            "childName": "Leader"
+                          },
+                          {
+                            "type": "lessThan",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "b40d-f8d9-74c9-6812",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true,
+                            "childName": "The Crescent of Mourn"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "fd9d-6cce-bb7e-efb9",
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "b40d-f8d9-74c9-6812",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true,
+                            "childName": "The Crescent of Mourn"
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "ancestor",
+                            "childId": "default-category",
+                            "shared": true,
+                            "childName": "Leader"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Mournful Curse",
+                "hidden": false,
+                "id": "c91d-8bb4-6844-ea05",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "roster",
+                    "shared": true,
+                    "id": "dde7-4bea-809a-c79e",
+                    "includeChildSelections": true
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Mournful Curse",
+                    "typeId": "9087-e42b-f4e7-2001",
+                    "typeName": "Abilities",
+                    "hidden": false,
+                    "id": "6247-9c23-0db4-850f",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "f11e-ca03-5b2a-f61b",
+                        "$text": "When this model is Shattered every model within 3\" suffers 2 damage"
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "lessThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "b40d-f8d9-74c9-6812",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "childName": "The Crescent of Mourn"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Erudite",
+                "hidden": false,
+                "id": "a542-8c51-68d3-701d",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5c41-546b-5680-ec8b",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "4345-48d6-ded3-525a",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Erudite",
+                    "typeId": "9087-e42b-f4e7-2001",
+                    "typeName": "Abilities",
+                    "hidden": false,
+                    "id": "896c-6d2c-5d0a-e691",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "f11e-ca03-5b2a-f61b",
+                        "$text": "Each time this leader rolls mana dice for spellcasting, on any rolls of 9-10 do not discard that mana dice from the gathering’s mana pool"
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "lessThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "898c-97ba-e7d8-5e20",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "childName": "Recusant Mafeficar"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "ancestor",
+                            "childId": "default-category",
+                            "shared": true,
+                            "childName": "Leader"
+                          },
+                          {
+                            "type": "lessThan",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "898c-97ba-e7d8-5e20",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true,
+                            "childName": "Recusant Mafeficar"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "4345-48d6-ded3-525a",
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "898c-97ba-e7d8-5e20",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true,
+                            "childName": "Recusant Mafeficar"
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "ancestor",
+                            "childId": "default-category",
+                            "shared": true,
+                            "childName": "Leader"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Apprentice",
+                "hidden": false,
+                "id": "ecd8-ef71-2dd5-16a8",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "roster",
+                    "shared": true,
+                    "id": "41b9-8ba5-f604-624e",
+                    "includeChildSelections": true
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Apprentice",
+                    "typeId": "9087-e42b-f4e7-2001",
+                    "typeName": "Abilities",
+                    "hidden": false,
+                    "id": "10b9-5d08-5a35-d253",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "f11e-ca03-5b2a-f61b",
+                        "$text": "This model knows 1 spell that is also known by the gathering’s leader. When spellcasting they use the Gathering's mana pool as normal. This model suffers arcane backlash on a channeling roll of 1-2."
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "lessThan",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "898c-97ba-e7d8-5e20",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true,
+                            "childName": "Recusant Mafeficar"
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "ancestor",
+                            "childId": "default-category",
+                            "shared": true,
+                            "childName": "Leader"
+                          },
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "ancestor",
+                            "childId": "d28f-2a3d-ed6e-c6fe",
+                            "shared": true,
+                            "childName": "Husk"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Crawling Lord",
+                "hidden": false,
+                "id": "ff21-33a9-8f0f-ecf0",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f126-e581-b831-d097",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "e99e-9807-d45f-91c0",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Crawling Lord",
+                    "typeId": "9087-e42b-f4e7-2001",
+                    "typeName": "Abilities",
+                    "hidden": false,
+                    "id": "6adf-797c-5a28-8e4e",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "f11e-ca03-5b2a-f61b",
+                        "$text": "When this leader finishes their activation they can immediately activate a friendly model within 6” with the Beast or Remnant keyword that has not yet activated"
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "ancestor",
+                            "childId": "default-category",
+                            "shared": true,
+                            "childName": "Leader"
+                          },
+                          {
+                            "type": "lessThan",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "7c40-3927-ac44-051e",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true,
+                            "childName": "Crawling-Dark"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "e99e-9807-d45f-91c0",
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "7c40-3927-ac44-051e",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true,
+                            "childName": "Crawling-Dark"
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "ancestor",
+                            "childId": "default-category",
+                            "shared": true,
+                            "childName": "Leader"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Eternal Loyalty",
+                "hidden": false,
+                "id": "6bf7-657a-1ab0-205b",
+                "profiles": [
+                  {
+                    "name": "Eternal Loyalty",
+                    "typeId": "9087-e42b-f4e7-2001",
+                    "typeName": "Abilities",
+                    "hidden": false,
+                    "id": "f5e2-c96f-bcfb-b256",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "f11e-ca03-5b2a-f61b",
+                        "$text": "If this model is within 3” of a friendly leader that is the target of an attack action, this model may choose to become the target of the attack action and is immediately Shattered before any attack dice are rolled. The targeted leader takes no damage."
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "roster",
+                    "shared": true,
+                    "id": "e7c4-b3e2-4361-0b24",
+                    "includeChildSelections": true,
+                    "includeChildForces": true
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "lessThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "7c40-3927-ac44-051e",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "childName": "Crawling-Dark"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Wretched Undead Traits",
+            "id": "8196-9219-d703-3352",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Acolyte",
+                "hidden": false,
+                "id": "4eca-8d3e-4dfa-dee7",
+                "profiles": [
+                  {
+                    "name": "Acolyte",
+                    "typeId": "9087-e42b-f4e7-2001",
+                    "typeName": "Abilities",
+                    "hidden": false,
+                    "id": "4fab-e1d5-a450-23b5",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "f11e-ca03-5b2a-f61b",
+                        "$text": "This model gains the following action: \n\n\nChant AP cost: 2\nThe gathering receives an additional mana dice of any type for its mana pool"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ed82-fadf-d874-366c",
+                    "includeChildSelections": false
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Balefire Body",
+                "hidden": false,
+                "id": "1255-f041-e1aa-db11",
+                "profiles": [
+                  {
+                    "name": "Balefire Body",
+                    "typeId": "9087-e42b-f4e7-2001",
+                    "typeName": "Abilities",
+                    "hidden": false,
+                    "id": "a014-5809-e2e8-db08",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "f11e-ca03-5b2a-f61b",
+                        "$text": "If this model moves or is pushed over or through an enemy model, that model suffers 1 damage. An enemy model can only suffer this damage once per move or push action"
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "notInstanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "3b8d-37a3-93c5-a35f",
+                        "shared": true,
+                        "childName": "Plasm"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3723-bf52-417d-b4e0",
+                    "includeChildSelections": false
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Breaking Wheel",
+                "hidden": false,
+                "id": "8532-85b7-a948-2051",
+                "profiles": [
+                  {
+                    "name": "Breaking Wheel",
+                    "typeId": "9087-e42b-f4e7-2001",
+                    "typeName": "Abilities",
+                    "hidden": false,
+                    "id": "344b-a8ef-d757-1660",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "f11e-ca03-5b2a-f61b",
+                        "$text": "If this model moves so that its base is touching an enemy model, that model suffers 2 damage. This model then suffers 1 damage.\n\n\nOnly 1 enemy model can suffer this damage once per move activation."
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "3b8d-37a3-93c5-a35f",
+                        "shared": true,
+                        "childName": "Plasm"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "4bc7-5290-44e8-394b",
+                    "includeChildSelections": false
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Filthy or Shrouded",
+                "hidden": false,
+                "id": "55ea-dfdb-d94b-4ec0",
+                "profiles": [
+                  {
+                    "name": "Filthy or Shrouded",
+                    "typeId": "9087-e42b-f4e7-2001",
+                    "typeName": "Abilities",
+                    "hidden": false,
+                    "id": "5bff-7c26-7e81-57bf",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "f11e-ca03-5b2a-f61b",
+                        "$text": "If this model is targeted by an attack/spell action from over 5\" away it is deemed to be obscured (attacker receives a -1 to their violence/ranged roll) this bonus cannot stack with being obscured by terrain"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "c034-0fb9-6a5f-fb66",
+                    "includeChildSelections": false
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Fulminate",
+                "hidden": false,
+                "id": "9072-f1d2-5931-7bba",
+                "profiles": [
+                  {
+                    "name": "Fulminate",
+                    "typeId": "9087-e42b-f4e7-2001",
+                    "typeName": "Abilities",
+                    "hidden": false,
+                    "id": "df79-3eaf-146d-3800",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "f11e-ca03-5b2a-f61b",
+                        "$text": "This model gains the following action:\n\n\nFulminate AP cost 1, every model within 3” of this model also suffers 3 damage, this model is then\nShattered\n\n\nThis model cannot be summoned after completing this action."
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "2d5c-6507-9248-3eef",
+                    "includeChildSelections": false
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Fungal Bloom",
+                "hidden": false,
+                "id": "db28-058c-5d0e-7271",
+                "profiles": [
+                  {
+                    "name": "Fungal Bloom",
+                    "typeId": "9087-e42b-f4e7-2001",
+                    "typeName": "Abilities",
+                    "hidden": false,
+                    "id": "1955-f497-347b-45cb",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "f11e-ca03-5b2a-f61b",
+                        "$text": "On activation, you may choose a single model within 3’’ of this model, it suffers 1 damage"
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "3b8d-37a3-93c5-a35f",
+                        "shared": true,
+                        "childName": "Plasm"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fe28-e077-8338-cbd8",
+                    "includeChildSelections": false
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Gnarled",
+                "hidden": false,
+                "id": "161e-06c0-1b15-41c5",
+                "profiles": [
+                  {
+                    "name": "Gnarled",
+                    "typeId": "9087-e42b-f4e7-2001",
+                    "typeName": "Abilities",
+                    "hidden": false,
+                    "id": "a48b-f375-4c24-cbbf",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "f11e-ca03-5b2a-f61b",
+                        "$text": "Once per game, when this model is targeted by an attack action, the model receives +2 armour for the duration of that action."
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "3b8d-37a3-93c5-a35f",
+                        "shared": true,
+                        "childName": "Plasm"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "bea5-2659-e8d7-6577",
+                    "includeChildSelections": false
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Grafted or Many Limbed",
+                "hidden": false,
+                "id": "fd23-9647-c0a5-ea99",
+                "profiles": [
+                  {
+                    "name": "Grafted or Many Limbed",
+                    "typeId": "9087-e42b-f4e7-2001",
+                    "typeName": "Abilities",
+                    "hidden": false,
+                    "id": "0b61-6e1c-8837-6d49",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "f11e-ca03-5b2a-f61b",
+                        "$text": "On a single melee attack action per game, the model receives +1 attacks to 1 weapon it has"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "de13-6a21-e2bc-7da2",
+                    "includeChildSelections": false
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Ineffable Dead",
+                "hidden": false,
+                "id": "de0f-c52c-ff3a-ac52",
+                "profiles": [
+                  {
+                    "name": "Ineffable Dead",
+                    "typeId": "9087-e42b-f4e7-2001",
+                    "typeName": "Abilities",
+                    "hidden": false,
+                    "id": "bec6-246a-bdb6-c809",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "f11e-ca03-5b2a-f61b",
+                        "$text": "Reduce the distance this model is pushed by 1”, to a minimum of 1”."
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5a69-dda4-9936-4a0b",
+                    "includeChildSelections": false
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Purloiner",
+                "hidden": false,
+                "id": "1c9f-2a5c-45c1-34db",
+                "profiles": [
+                  {
+                    "name": "Purloiner",
+                    "typeId": "9087-e42b-f4e7-2001",
+                    "typeName": "Abilities",
+                    "hidden": false,
+                    "id": "af29-4bfb-37a3-63c1",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "f11e-ca03-5b2a-f61b",
+                        "$text": "After each scenario roll a d10, if this is equal or lower than this model’s move characteristic, gain d10 obols."
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "786a-852d-2ed1-0563",
+                    "includeChildSelections": false
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Skitter",
+                "hidden": false,
+                "id": "dc44-9bf0-593f-c78d",
+                "profiles": [
+                  {
+                    "name": "Skitter",
+                    "typeId": "9087-e42b-f4e7-2001",
+                    "typeName": "Abilities",
+                    "hidden": false,
+                    "id": "3379-03ce-6f57-d53d",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "f11e-ca03-5b2a-f61b",
+                        "$text": "This model has +1 move, ignores falling damage if falling from 3’’ or lower Falling damage still applies to any model it lands in base-to-base contact with."
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "3b8d-37a3-93c5-a35f",
+                        "shared": true,
+                        "childName": "Plasm"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "832d-8f71-127e-d7c3",
+                    "includeChildSelections": false
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sluglike or Fleshy Amalgam",
+                "hidden": false,
+                "id": "8fbc-d0bc-c616-3e9e",
+                "profiles": [
+                  {
+                    "name": "Sluglike or Fleshy Amalgam",
+                    "typeId": "9087-e42b-f4e7-2001",
+                    "typeName": "Abilities",
+                    "hidden": false,
+                    "id": "5d1a-b9fe-5f21-8379",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "f11e-ca03-5b2a-f61b",
+                        "$text": "Movement up or down a vertical surface is counted as only half the distance in inches for this model. For example, a move of 4’’ up a vertical surface would be treated as only 2” of movement."
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "3b8d-37a3-93c5-a35f",
+                        "shared": true,
+                        "childName": "Plasm"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0612-e56c-c483-0d72",
+                    "includeChildSelections": false
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Voices from the Firmament",
+                "hidden": false,
+                "id": "a5b8-2236-2cbb-8640",
+                "profiles": [
+                  {
+                    "name": "Voices from the Firmament",
+                    "typeId": "9087-e42b-f4e7-2001",
+                    "typeName": "Abilities",
+                    "hidden": false,
+                    "id": "aa08-9e09-e316-3248",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "f11e-ca03-5b2a-f61b",
+                        "$text": "This model gains the following action: \n\n\nSpeak AP cost: 1 \nChoose a single model within 5\" and push it 1\"."
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6ec3-8316-5b37-b816",
+                    "includeChildSelections": false
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "notInstanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "default-category",
+                        "shared": true,
+                        "childName": "Leader"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 0,
+            "field": "selections",
+            "scope": "self",
+            "shared": true,
+            "id": "fba1-8c16-5c54-1163",
+            "includeChildSelections": true
+          },
+          {
+            "type": "max",
+            "value": 2,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "968e-616d-ed9f-29fa",
+            "includeChildSelections": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 2,
+            "field": "fba1-8c16-5c54-1163",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "ancestor",
+                "childId": "default-category",
+                "shared": true,
+                "childName": "Leader"
+              }
+            ]
+          },
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "fba1-8c16-5c54-1163",
+            "conditions": [
+              {
+                "type": "notInstanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "ancestor",
+                "childId": "default-category",
+                "shared": true,
+                "childName": "Leader"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Summon",
+        "hidden": false,
+        "id": "871b-f17a-9efb-56cc",
+        "profiles": [
+          {
+            "name": "Summon",
+            "typeId": "863d-79bf-d614-427e",
+            "typeName": "Spells",
+            "hidden": false,
+            "id": "978c-5977-719e-7d56",
+            "characteristics": [
+              {
+                "name": "AP",
+                "typeId": "8200-e9a7-ce10-581a",
+                "$text": "1"
+              },
+              {
+                "name": "Channel",
+                "typeId": "327c-6c73-5dc5-7988",
+                "$text": "6+"
+              },
+              {
+                "name": "Effect",
+                "typeId": "5a9d-b373-64bc-75dc",
+                "$text": "Choose a Shattered friendly model that does not have the Leader keyword and place it back on the board within 5’’ of the caster and restore 4/6 hp to it"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Covenant",
+        "hidden": false,
+        "id": "f955-1af2-35ca-34d3",
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Covenant",
+            "hidden": false,
+            "id": "80f0-5657-6238-0e9a",
+            "type": "selectionEntryGroup",
+            "targetId": "66e5-1399-644e-8868"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "8ab7-9b25-8404-52b3",
+            "id": "f48b-4adc-76e0-3d5b",
+            "primary": true,
+            "name": "Covenant"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Claws and Fangs",
+        "hidden": false,
+        "id": "4ab4-66ef-4012-cf5e",
+        "costs": [
+          {
+            "name": "obols",
+            "typeId": "7bf0-2994-bf46-2ea8",
+            "value": 5
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Claws and Fangs",
+            "typeId": "a950-f780-5e86-eb45",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "2b2d-bac1-be80-cca6",
+            "characteristics": [
+              {
+                "name": "Handed",
+                "typeId": "7025-f808-11d5-2fd3",
+                "$text": "2h"
+              },
+              {
+                "name": "Range",
+                "typeId": "5cfc-9542-21ef-a99f",
+                "$text": "1\""
+              },
+              {
+                "name": "Attacks",
+                "typeId": "b94d-0abd-0f04-a2b7",
+                "$text": "3"
+              },
+              {
+                "name": "Damage",
+                "typeId": "1851-9ed4-49ab-5337",
+                "$text": "1/3"
+              },
+              {
+                "name": "Special",
+                "typeId": "dbee-ea89-7fda-9567",
+                "$text": ""
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "c8e8-c974-cef6-875c",
+            "includeChildSelections": false
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Improvised Weapon",
+        "hidden": false,
+        "id": "63bc-615d-e7cf-fb19",
+        "profiles": [
+          {
+            "name": "Improvised Weapon",
+            "typeId": "a950-f780-5e86-eb45",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "9438-426b-bdae-6bbd",
+            "characteristics": [
+              {
+                "name": "Handed",
+                "typeId": "7025-f808-11d5-2fd3",
+                "$text": "1h"
+              },
+              {
+                "name": "Range",
+                "typeId": "5cfc-9542-21ef-a99f",
+                "$text": "1\""
+              },
+              {
+                "name": "Attacks",
+                "typeId": "b94d-0abd-0f04-a2b7",
+                "$text": "2"
+              },
+              {
+                "name": "Damage",
+                "typeId": "1851-9ed4-49ab-5337",
+                "$text": "1/3"
+              },
+              {
+                "name": "Special",
+                "typeId": "dbee-ea89-7fda-9567",
+                "$text": ""
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "c65f-c3f2-5a20-4449",
+            "includeChildSelections": false
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": 0,
+            "field": "c65f-c3f2-5a20-4449",
+            "conditions": [
+              {
+                "type": "greaterThan",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "5481-cc2a-fd07-45ce",
+                "shared": true,
+                "includeChildSelections": true,
+                "childName": "Weapons",
+                "includeChildForces": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Large Claws",
+        "hidden": false,
+        "id": "b68e-50b8-b323-08e7",
+        "profiles": [
+          {
+            "name": "Large Claws",
+            "typeId": "a950-f780-5e86-eb45",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "d523-7fa0-8b74-0bcb",
+            "characteristics": [
+              {
+                "name": "Handed",
+                "typeId": "7025-f808-11d5-2fd3",
+                "$text": "2h"
+              },
+              {
+                "name": "Range",
+                "typeId": "5cfc-9542-21ef-a99f",
+                "$text": "1\""
+              },
+              {
+                "name": "Attacks",
+                "typeId": "b94d-0abd-0f04-a2b7",
+                "$text": "2"
+              },
+              {
+                "name": "Damage",
+                "typeId": "1851-9ed4-49ab-5337",
+                "$text": "2/6"
+              },
+              {
+                "name": "Special",
+                "typeId": "dbee-ea89-7fda-9567",
+                "$text": ""
+              }
+            ]
+          }
+        ],
+        "costs": [
+          {
+            "name": "obols",
+            "typeId": "7bf0-2994-bf46-2ea8",
+            "value": 35
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "3803-f5ee-be31-8617",
+            "includeChildSelections": false
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "ancestor",
+                "childId": "9408-6d6b-af42-7a6f",
+                "shared": true,
+                "includeChildSelections": true,
+                "childName": "Remnant"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

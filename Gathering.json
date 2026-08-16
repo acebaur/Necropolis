@@ -1,0 +1,1692 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "d91f-2960-e3e6-93f5",
+    "name": "Gathering",
+    "gameSystemId": "sys-4fd6-5f37-2e2f-60dd",
+    "gameSystemRevision": 1,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "sharedSelectionEntries": [
+      {
+        "type": "model",
+        "import": true,
+        "name": "Lich",
+        "hidden": false,
+        "id": "d57e-98e6-4da0-b28d",
+        "categoryLinks": [
+          {
+            "targetId": "default-category",
+            "id": "cd08-5914-6f54-4197",
+            "primary": true,
+            "name": "Leader"
+          },
+          {
+            "targetId": "ce2d-975a-98b2-ec8e",
+            "id": "d857-36aa-de5c-bca1",
+            "primary": false,
+            "name": "Lich"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Lich",
+            "typeId": "9272-a60a-c387-53cb",
+            "typeName": "Unit",
+            "hidden": false,
+            "id": "2b5f-13ec-faec-38b4",
+            "characteristics": [
+              {
+                "name": "AP",
+                "typeId": "838d-3831-326a-d543",
+                "$text": "2"
+              },
+              {
+                "name": "M",
+                "typeId": "f5bf-7829-484a-db1d",
+                "$text": "3"
+              },
+              {
+                "name": "Violence",
+                "typeId": "09a6-6cdb-ee74-e4d7",
+                "$text": "7+"
+              },
+              {
+                "name": "Ranged",
+                "typeId": "8a1d-c563-4b54-9a31",
+                "$text": "7+"
+              },
+              {
+                "name": "HP",
+                "typeId": "851a-dd01-b57f-9383",
+                "$text": "15"
+              }
+            ]
+          },
+          {
+            "name": "Caster",
+            "typeId": "9087-e42b-f4e7-2001",
+            "typeName": "Abilities",
+            "hidden": false,
+            "id": "fc9f-9e5c-e0e8-46dd",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "f11e-ca03-5b2a-f61b",
+                "$text": "A lich cannot wear heavy armour or carry a shield"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Weapons",
+            "hidden": false,
+            "id": "7d33-1495-a3fb-c48e",
+            "type": "selectionEntryGroup",
+            "targetId": "5481-cc2a-fd07-45ce"
+          },
+          {
+            "import": true,
+            "name": "Basic Leader Trait",
+            "hidden": false,
+            "id": "fc6c-da8d-8c22-1108",
+            "type": "selectionEntryGroup",
+            "targetId": "95fb-52ee-1bb0-0f8c"
+          },
+          {
+            "import": true,
+            "name": "Armour",
+            "hidden": false,
+            "id": "d7a7-a23a-46c1-25fc",
+            "type": "selectionEntryGroup",
+            "targetId": "86de-afcc-fe2a-de70"
+          },
+          {
+            "import": true,
+            "name": "Spells",
+            "hidden": false,
+            "id": "7f48-509d-6303-c0fc",
+            "type": "selectionEntryGroup",
+            "targetId": "00ca-adc9-7d0a-3e16"
+          },
+          {
+            "import": true,
+            "name": "Keyword",
+            "hidden": false,
+            "id": "de87-76dd-e0cf-341f",
+            "type": "selectionEntryGroup",
+            "targetId": "0ea3-5549-161a-2105"
+          },
+          {
+            "import": true,
+            "name": "Traits",
+            "hidden": false,
+            "id": "4373-9aae-c7f5-e971",
+            "type": "selectionEntryGroup",
+            "targetId": "930e-1703-aaa1-5502"
+          }
+        ]
+      },
+      {
+        "type": "model",
+        "import": true,
+        "name": "Revenant",
+        "hidden": false,
+        "id": "47ab-ae4f-c674-1fcd",
+        "categoryLinks": [
+          {
+            "targetId": "default-category",
+            "id": "cc39-e0d2-7509-25f3",
+            "primary": true,
+            "name": "Leader"
+          },
+          {
+            "targetId": "13e1-0cf0-c00a-70b9",
+            "id": "5349-a362-e72b-09d2",
+            "primary": false,
+            "name": "Revenant"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Revenant",
+            "typeId": "9272-a60a-c387-53cb",
+            "typeName": "Unit",
+            "hidden": false,
+            "id": "db35-9cb3-f3e4-5c88",
+            "characteristics": [
+              {
+                "name": "AP",
+                "typeId": "838d-3831-326a-d543",
+                "$text": "2"
+              },
+              {
+                "name": "M",
+                "typeId": "f5bf-7829-484a-db1d",
+                "$text": "3\""
+              },
+              {
+                "name": "Violence",
+                "typeId": "09a6-6cdb-ee74-e4d7",
+                "$text": "6+"
+              },
+              {
+                "name": "Ranged",
+                "typeId": "8a1d-c563-4b54-9a31",
+                "$text": "7+"
+              },
+              {
+                "name": "HP",
+                "typeId": "851a-dd01-b57f-9383",
+                "$text": "17"
+              }
+            ]
+          },
+          {
+            "name": "Ancient Skill",
+            "typeId": "9087-e42b-f4e7-2001",
+            "typeName": "Abilities",
+            "hidden": false,
+            "id": "dcf0-55c3-aa18-1f00",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "f11e-ca03-5b2a-f61b",
+                "$text": "During this model’s attack action if any dice rolled is an unmodified 10 that dice is considered a critical hit, critical hits do an additional +1 damage. E. g. if a model with a blade (Damage 1 / 3) scores a glance (1 damage),a hit (3 damage) and a critical hit (3+1 damage)that attack action would do 8 damage."
+              }
+            ]
+          },
+          {
+            "name": "Fighter",
+            "typeId": "9087-e42b-f4e7-2001",
+            "typeName": "Abilities",
+            "hidden": false,
+            "id": "f88b-9e97-d973-eab6",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "f11e-ca03-5b2a-f61b",
+                "$text": "A revenant can never gain more than 4 spells(including summon) and 4 mana points."
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Armour",
+            "hidden": false,
+            "id": "d456-accf-ba84-1fea",
+            "type": "selectionEntryGroup",
+            "targetId": "86de-afcc-fe2a-de70"
+          },
+          {
+            "import": true,
+            "name": "Basic Leader Trait",
+            "hidden": false,
+            "id": "167f-5c68-2218-1624",
+            "type": "selectionEntryGroup",
+            "targetId": "95fb-52ee-1bb0-0f8c"
+          },
+          {
+            "import": true,
+            "name": "Keyword",
+            "hidden": false,
+            "id": "0184-fc3c-9f65-d9d8",
+            "type": "selectionEntryGroup",
+            "targetId": "0ea3-5549-161a-2105"
+          },
+          {
+            "import": true,
+            "name": "Spells",
+            "hidden": false,
+            "id": "174d-2bba-dc8e-f6ac",
+            "type": "selectionEntryGroup",
+            "targetId": "00ca-adc9-7d0a-3e16"
+          },
+          {
+            "import": true,
+            "name": "Weapons",
+            "hidden": false,
+            "id": "da2b-ef34-39d3-a5de",
+            "type": "selectionEntryGroup",
+            "targetId": "5481-cc2a-fd07-45ce"
+          },
+          {
+            "import": true,
+            "name": "Traits",
+            "hidden": false,
+            "id": "ca7c-1759-5e9e-81ca",
+            "type": "selectionEntryGroup",
+            "targetId": "930e-1703-aaa1-5502"
+          }
+        ]
+      },
+      {
+        "type": "model",
+        "import": true,
+        "name": "Ascended Undead",
+        "hidden": false,
+        "id": "62ae-edd8-e7d8-b099",
+        "costs": [
+          {
+            "name": "Obols",
+            "typeId": "7bf0-2994-bf46-2ea8",
+            "value": 225
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "default-category",
+            "id": "d414-cb01-401c-ecba",
+            "primary": true,
+            "name": "Leader"
+          },
+          {
+            "targetId": "63e3-607f-9056-81b5",
+            "id": "22b3-392c-a5da-0351",
+            "primary": false,
+            "name": "Colossal"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Ascended Undead",
+            "typeId": "9272-a60a-c387-53cb",
+            "typeName": "Unit",
+            "hidden": false,
+            "id": "8f96-39fd-27c7-321f",
+            "characteristics": [
+              {
+                "name": "AP",
+                "typeId": "838d-3831-326a-d543",
+                "$text": "3"
+              },
+              {
+                "name": "M",
+                "typeId": "f5bf-7829-484a-db1d",
+                "$text": "3\""
+              },
+              {
+                "name": "Violence",
+                "typeId": "09a6-6cdb-ee74-e4d7",
+                "$text": "5+"
+              },
+              {
+                "name": "Ranged",
+                "typeId": "8a1d-c563-4b54-9a31",
+                "$text": "6+"
+              },
+              {
+                "name": "HP",
+                "typeId": "851a-dd01-b57f-9383",
+                "$text": "25"
+              }
+            ]
+          },
+          {
+            "name": "Colossal",
+            "typeId": "9087-e42b-f4e7-2001",
+            "typeName": "Abilities",
+            "hidden": false,
+            "id": "9a4a-9eed-ae8c-ea45",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "f11e-ca03-5b2a-f61b",
+                "$text": "This model can only take weapons from the Colossal Weapon lists"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Basic Leader Trait",
+            "hidden": false,
+            "id": "3213-13e7-f46f-c3fd",
+            "type": "selectionEntryGroup",
+            "targetId": "95fb-52ee-1bb0-0f8c"
+          },
+          {
+            "import": true,
+            "name": "Keyword",
+            "hidden": false,
+            "id": "f0a4-632d-15b6-557b",
+            "type": "selectionEntryGroup",
+            "targetId": "0ea3-5549-161a-2105"
+          },
+          {
+            "import": true,
+            "name": "Spells",
+            "hidden": false,
+            "id": "a475-b1f2-4f92-f669",
+            "type": "selectionEntryGroup",
+            "targetId": "00ca-adc9-7d0a-3e16"
+          },
+          {
+            "import": true,
+            "name": "Colossal Weapons",
+            "hidden": false,
+            "id": "47cd-3e50-e2bc-5820",
+            "type": "selectionEntryGroup",
+            "targetId": "76e6-c41d-4215-62d7"
+          },
+          {
+            "import": true,
+            "name": "Armour",
+            "hidden": false,
+            "id": "957e-c2eb-7e7b-12c3",
+            "type": "selectionEntryGroup",
+            "targetId": "86de-afcc-fe2a-de70"
+          },
+          {
+            "import": true,
+            "name": "Traits",
+            "hidden": false,
+            "id": "3ea9-4a23-eddf-2ad8",
+            "type": "selectionEntryGroup",
+            "targetId": "930e-1703-aaa1-5502"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Threatening Aura",
+            "id": "3caf-ce6e-e7a2-c621",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "8466-5386-7e68-a67c"
+          }
+        ]
+      },
+      {
+        "type": "model",
+        "import": true,
+        "name": "Husk",
+        "hidden": false,
+        "id": "45eb-224f-c838-b389",
+        "categoryLinks": [
+          {
+            "targetId": "0783-45b6-e85d-698d",
+            "id": "e98f-a75d-25bc-577e",
+            "primary": true,
+            "name": "Minion"
+          },
+          {
+            "targetId": "d28f-2a3d-ed6e-c6fe",
+            "id": "f2f4-fc28-d89d-7f8e",
+            "primary": false,
+            "name": "Husk"
+          }
+        ],
+        "costs": [
+          {
+            "name": "Obols",
+            "typeId": "7bf0-2994-bf46-2ea8",
+            "value": 50
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Husk",
+            "typeId": "9272-a60a-c387-53cb",
+            "typeName": "Unit",
+            "hidden": false,
+            "id": "309c-1250-5096-306f",
+            "characteristics": [
+              {
+                "name": "AP",
+                "typeId": "838d-3831-326a-d543",
+                "$text": "2"
+              },
+              {
+                "name": "M",
+                "typeId": "f5bf-7829-484a-db1d",
+                "$text": "3\""
+              },
+              {
+                "name": "Violence",
+                "typeId": "09a6-6cdb-ee74-e4d7",
+                "$text": "7+"
+              },
+              {
+                "name": "Ranged",
+                "typeId": "8a1d-c563-4b54-9a31",
+                "$text": "7+"
+              },
+              {
+                "name": "HP",
+                "typeId": "851a-dd01-b57f-9383",
+                "$text": "10"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Keyword",
+            "hidden": false,
+            "id": "a7c2-0335-33c3-cbb6",
+            "type": "selectionEntryGroup",
+            "targetId": "0ea3-5549-161a-2105"
+          },
+          {
+            "import": true,
+            "name": "Armour",
+            "hidden": false,
+            "id": "6d51-b604-c226-c161",
+            "type": "selectionEntryGroup",
+            "targetId": "86de-afcc-fe2a-de70"
+          },
+          {
+            "import": true,
+            "name": "Weapons",
+            "hidden": false,
+            "id": "95ea-8ba3-dd7d-ea91",
+            "type": "selectionEntryGroup",
+            "targetId": "5481-cc2a-fd07-45ce"
+          },
+          {
+            "import": true,
+            "name": "Traits",
+            "hidden": false,
+            "id": "7b6b-afa1-d1d9-cb69",
+            "type": "selectionEntryGroup",
+            "targetId": "930e-1703-aaa1-5502"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": "Ghast Husk",
+            "field": "name",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "root-entry",
+                "childId": "f1cb-1545-7e1e-d721",
+                "shared": true,
+                "childName": "Plasm",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "type": "set",
+            "value": "Corpse Husk",
+            "field": "name",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "root-entry",
+                "childId": "fef7-01eb-af98-91a1",
+                "shared": true,
+                "childName": "Blood",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "type": "set",
+            "value": "Skeletal Husk",
+            "field": "name",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "root-entry",
+                "childId": "fa1f-6b6d-6af0-1372",
+                "shared": true,
+                "childName": "Bone",
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "model",
+        "import": true,
+        "name": "Aberrant Husk",
+        "hidden": false,
+        "id": "cdb1-fa5a-5a36-38d3",
+        "costs": [
+          {
+            "name": "Obols",
+            "typeId": "7bf0-2994-bf46-2ea8",
+            "value": 90
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "0783-45b6-e85d-698d",
+            "id": "b835-def2-5e3e-498d",
+            "primary": true,
+            "name": "Minion"
+          },
+          {
+            "targetId": "d28f-2a3d-ed6e-c6fe",
+            "id": "40b2-421a-0f4e-cb9a",
+            "primary": false,
+            "name": "Husk"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Keyword",
+            "hidden": false,
+            "id": "0971-aa25-2921-29c6",
+            "type": "selectionEntryGroup",
+            "targetId": "0ea3-5549-161a-2105"
+          },
+          {
+            "import": true,
+            "name": "Armour",
+            "hidden": false,
+            "id": "a849-23dc-8c5a-b73f",
+            "type": "selectionEntryGroup",
+            "targetId": "86de-afcc-fe2a-de70"
+          },
+          {
+            "import": true,
+            "name": "Weapons",
+            "hidden": false,
+            "id": "85a6-7e68-4d67-7b5d",
+            "type": "selectionEntryGroup",
+            "targetId": "5481-cc2a-fd07-45ce"
+          },
+          {
+            "import": true,
+            "name": "Traits",
+            "hidden": false,
+            "id": "8163-d5bd-d7f8-9bc6",
+            "type": "selectionEntryGroup",
+            "targetId": "930e-1703-aaa1-5502"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Aberrant Husk",
+            "typeId": "9272-a60a-c387-53cb",
+            "typeName": "Unit",
+            "hidden": false,
+            "id": "793c-da66-bd74-1663",
+            "characteristics": [
+              {
+                "name": "AP",
+                "typeId": "838d-3831-326a-d543",
+                "$text": "2"
+              },
+              {
+                "name": "M",
+                "typeId": "f5bf-7829-484a-db1d",
+                "$text": "3\""
+              },
+              {
+                "name": "Violence",
+                "typeId": "09a6-6cdb-ee74-e4d7",
+                "$text": "6+"
+              },
+              {
+                "name": "Ranged",
+                "typeId": "8a1d-c563-4b54-9a31",
+                "$text": "7+"
+              },
+              {
+                "name": "HP",
+                "typeId": "851a-dd01-b57f-9383",
+                "$text": "12"
+              }
+            ]
+          },
+          {
+            "name": "Brutal",
+            "typeId": "9087-e42b-f4e7-2001",
+            "typeName": "Abilities",
+            "hidden": false,
+            "id": "e081-48ed-8736-80a4",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "f11e-ca03-5b2a-f61b",
+                "$text": "When this model performs an attack action, add +1 to the damage total."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "model",
+        "import": true,
+        "name": "Familiar",
+        "hidden": false,
+        "id": "2229-c8a0-adee-b185",
+        "costs": [
+          {
+            "name": "Obols",
+            "typeId": "7bf0-2994-bf46-2ea8",
+            "value": 40
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "0783-45b6-e85d-698d",
+            "id": "f897-e2d0-97f1-5ebf",
+            "primary": true,
+            "name": "Minion"
+          },
+          {
+            "targetId": "edee-b2a2-8ae2-3872",
+            "id": "7910-1c0c-41c9-ca8e",
+            "primary": false,
+            "name": "Familiar"
+          },
+          {
+            "targetId": "8584-434d-f7a8-0ac4",
+            "id": "564b-7f34-1b26-3dc8",
+            "primary": false,
+            "name": "Fly"
+          },
+          {
+            "targetId": "4f3c-31a1-da02-e3d4",
+            "id": "8e8d-0ead-3908-d1c3",
+            "primary": false,
+            "name": "Beast"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Familiar",
+            "typeId": "9272-a60a-c387-53cb",
+            "typeName": "Unit",
+            "hidden": false,
+            "id": "d254-f2c7-6484-6a69",
+            "characteristics": [
+              {
+                "name": "AP",
+                "typeId": "838d-3831-326a-d543",
+                "$text": "2"
+              },
+              {
+                "name": "M",
+                "typeId": "f5bf-7829-484a-db1d",
+                "$text": "4\""
+              },
+              {
+                "name": "Violence",
+                "typeId": "09a6-6cdb-ee74-e4d7",
+                "$text": "9+"
+              },
+              {
+                "name": "Ranged",
+                "typeId": "8a1d-c563-4b54-9a31",
+                "$text": "-"
+              },
+              {
+                "name": "HP",
+                "typeId": "851a-dd01-b57f-9383",
+                "$text": "6"
+              }
+            ]
+          },
+          {
+            "name": "Soul Link",
+            "typeId": "9087-e42b-f4e7-2001",
+            "typeName": "Abilities",
+            "hidden": false,
+            "id": "c088-e5f0-ce3a-9e6a",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "f11e-ca03-5b2a-f61b",
+                "$text": "If a familiar moves or is pushed across or into base contact with a mana token, the Gathering receives additional mana dice of that type for its mana pool. The token is then removed."
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "e87a-4e9d-06a3-59db",
+            "includeChildSelections": true
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Keyword",
+            "hidden": false,
+            "id": "a70f-a713-6bcd-012a",
+            "type": "selectionEntryGroup",
+            "targetId": "0ea3-5549-161a-2105"
+          },
+          {
+            "import": true,
+            "name": "Traits",
+            "hidden": false,
+            "id": "db4d-40aa-a091-496f",
+            "type": "selectionEntryGroup",
+            "targetId": "930e-1703-aaa1-5502"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Unique",
+            "id": "eb2c-f6ff-c03e-1017",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "9f6c-19b4-4afc-eb56"
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Weapons",
+            "id": "081c-2d99-0489-23e7",
+            "hidden": false,
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "e533-c2a4-e642-9480",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "539c-6038-56e9-9eb5",
+                "includeChildSelections": false
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Claws and Fangs",
+                "hidden": false,
+                "id": "9883-8844-ed22-c123",
+                "type": "selectionEntry",
+                "targetId": "4ab4-66ef-4012-cf5e"
+              },
+              {
+                "import": true,
+                "name": "Improvised Weapon",
+                "hidden": false,
+                "id": "b6b1-97fb-c53b-ffb3",
+                "type": "selectionEntry",
+                "targetId": "63bc-615d-e7cf-fb19"
+              }
+            ],
+            "defaultSelectionEntryId": "b6b1-97fb-c53b-ffb3"
+          }
+        ]
+      },
+      {
+        "type": "model",
+        "import": true,
+        "name": "Necromantic Remnant",
+        "hidden": false,
+        "id": "113f-fb7d-adc2-7ce6",
+        "costs": [
+          {
+            "name": "Obols",
+            "typeId": "7bf0-2994-bf46-2ea8",
+            "value": 35
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "0783-45b6-e85d-698d",
+            "id": "3efc-1ca8-240d-bf6e",
+            "primary": true,
+            "name": "Minion"
+          },
+          {
+            "targetId": "d28f-2a3d-ed6e-c6fe",
+            "id": "0861-68d3-3b73-ea75",
+            "primary": false,
+            "name": "Husk"
+          },
+          {
+            "targetId": "4f3c-31a1-da02-e3d4",
+            "id": "63bc-d6fe-1321-f27b",
+            "primary": false,
+            "name": "Beast"
+          },
+          {
+            "targetId": "9408-6d6b-af42-7a6f",
+            "id": "3b43-3982-fd58-5b12",
+            "primary": false,
+            "name": "Remnant"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Necromantic Remnant",
+            "typeId": "9272-a60a-c387-53cb",
+            "typeName": "Unit",
+            "hidden": false,
+            "id": "41d3-bdce-9814-9d41",
+            "characteristics": [
+              {
+                "name": "AP",
+                "typeId": "838d-3831-326a-d543",
+                "$text": "2"
+              },
+              {
+                "name": "M",
+                "typeId": "f5bf-7829-484a-db1d",
+                "$text": "3\""
+              },
+              {
+                "name": "Violence",
+                "typeId": "09a6-6cdb-ee74-e4d7",
+                "$text": "9+"
+              },
+              {
+                "name": "Ranged",
+                "typeId": "8a1d-c563-4b54-9a31",
+                "$text": "9+"
+              },
+              {
+                "name": "HP",
+                "typeId": "851a-dd01-b57f-9383",
+                "$text": "6"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Armour",
+            "hidden": false,
+            "id": "1c8e-56b3-34dc-65a0",
+            "type": "selectionEntryGroup",
+            "targetId": "86de-afcc-fe2a-de70"
+          },
+          {
+            "import": true,
+            "name": "Keyword",
+            "hidden": false,
+            "id": "6f10-d410-8a1b-1129",
+            "type": "selectionEntryGroup",
+            "targetId": "0ea3-5549-161a-2105"
+          },
+          {
+            "import": true,
+            "name": "Weapons",
+            "hidden": false,
+            "id": "c51e-d06d-46a9-9198",
+            "type": "selectionEntryGroup",
+            "targetId": "5481-cc2a-fd07-45ce"
+          },
+          {
+            "import": true,
+            "name": "Traits",
+            "hidden": false,
+            "id": "988a-6314-9bb5-b81d",
+            "type": "selectionEntryGroup",
+            "targetId": "930e-1703-aaa1-5502"
+          }
+        ]
+      },
+      {
+        "type": "model",
+        "import": true,
+        "name": "Small Beast",
+        "hidden": false,
+        "id": "7151-2978-cd24-f14d",
+        "costs": [
+          {
+            "name": "Obols",
+            "typeId": "7bf0-2994-bf46-2ea8",
+            "value": 60
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Keyword",
+            "hidden": false,
+            "id": "1f10-030a-94cf-0872",
+            "type": "selectionEntryGroup",
+            "targetId": "0ea3-5549-161a-2105"
+          },
+          {
+            "import": true,
+            "name": "Armour",
+            "hidden": false,
+            "id": "03f5-2a67-8832-e23d",
+            "type": "selectionEntryGroup",
+            "targetId": "86de-afcc-fe2a-de70"
+          },
+          {
+            "import": true,
+            "name": "Traits",
+            "hidden": false,
+            "id": "3536-8a00-82ef-bb3d",
+            "type": "selectionEntryGroup",
+            "targetId": "930e-1703-aaa1-5502"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Small Beast",
+            "typeId": "9272-a60a-c387-53cb",
+            "typeName": "Unit",
+            "hidden": false,
+            "id": "55a7-4c46-b2ed-8a8e",
+            "characteristics": [
+              {
+                "name": "AP",
+                "typeId": "838d-3831-326a-d543",
+                "$text": "2"
+              },
+              {
+                "name": "M",
+                "typeId": "f5bf-7829-484a-db1d",
+                "$text": "4\""
+              },
+              {
+                "name": "Violence",
+                "typeId": "09a6-6cdb-ee74-e4d7",
+                "$text": "7+"
+              },
+              {
+                "name": "Ranged",
+                "typeId": "8a1d-c563-4b54-9a31",
+                "$text": "-"
+              },
+              {
+                "name": "HP",
+                "typeId": "851a-dd01-b57f-9383",
+                "$text": "10"
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "0783-45b6-e85d-698d",
+            "id": "8c50-cce9-2020-6fd0",
+            "primary": true,
+            "name": "Minion"
+          },
+          {
+            "targetId": "4f3c-31a1-da02-e3d4",
+            "id": "e850-aaf6-b589-88e1",
+            "primary": false,
+            "name": "Beast"
+          },
+          {
+            "targetId": "27f3-4ecd-2d52-15d5",
+            "id": "48b3-3d99-8c7f-ab16",
+            "primary": false,
+            "name": "Small Beast"
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Weapons",
+            "id": "97d7-51ad-c808-f267",
+            "hidden": false,
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "6872-351c-a092-270a",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "4845-e27a-7ea5-5960",
+                "includeChildSelections": false
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Claws and Fangs",
+                "hidden": false,
+                "id": "02f3-08ee-01de-3887",
+                "type": "selectionEntry",
+                "targetId": "4ab4-66ef-4012-cf5e"
+              },
+              {
+                "import": true,
+                "name": "Improvised Weapon",
+                "hidden": false,
+                "id": "8c3d-a662-3c65-59a6",
+                "type": "selectionEntry",
+                "targetId": "63bc-615d-e7cf-fb19"
+              }
+            ],
+            "defaultSelectionEntryId": "8c3d-a662-3c65-59a6"
+          }
+        ]
+      },
+      {
+        "type": "model",
+        "import": true,
+        "name": "Large Beast",
+        "hidden": false,
+        "id": "5abd-2e4f-2e97-afe3",
+        "costs": [
+          {
+            "name": "Obols",
+            "typeId": "7bf0-2994-bf46-2ea8",
+            "value": 80
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "0783-45b6-e85d-698d",
+            "id": "3e3c-19e3-30b4-a22a",
+            "primary": true,
+            "name": "Minion"
+          },
+          {
+            "targetId": "4f3c-31a1-da02-e3d4",
+            "id": "f213-c98e-48ca-73d9",
+            "primary": false,
+            "name": "Beast"
+          },
+          {
+            "targetId": "66c9-c8ac-10fd-cc6e",
+            "id": "38a2-24be-7e67-b872",
+            "primary": false,
+            "name": "Large Beast"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Large Beast",
+            "typeId": "9272-a60a-c387-53cb",
+            "typeName": "Unit",
+            "hidden": false,
+            "id": "89f0-2dac-bb55-45a6",
+            "characteristics": [
+              {
+                "name": "AP",
+                "typeId": "838d-3831-326a-d543",
+                "$text": "2"
+              },
+              {
+                "name": "M",
+                "typeId": "f5bf-7829-484a-db1d",
+                "$text": "3\""
+              },
+              {
+                "name": "Violence",
+                "typeId": "09a6-6cdb-ee74-e4d7",
+                "$text": "7+"
+              },
+              {
+                "name": "Ranged",
+                "typeId": "8a1d-c563-4b54-9a31",
+                "$text": "-"
+              },
+              {
+                "name": "HP",
+                "typeId": "851a-dd01-b57f-9383",
+                "$text": "15"
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "b5b9-b8cc-3813-d3d1",
+            "includeChildSelections": true
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Unique",
+            "id": "c8c2-b523-89a7-442e",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "9f6c-19b4-4afc-eb56"
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Weapons",
+            "id": "56dc-767d-2be4-043c",
+            "hidden": false,
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "9e54-2555-0c6f-2390",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1d10-0270-c5a9-eff9",
+                "includeChildSelections": false
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Claws and Fangs",
+                "hidden": false,
+                "id": "e0c5-96c6-5b3c-e0c5",
+                "type": "selectionEntry",
+                "targetId": "4ab4-66ef-4012-cf5e"
+              },
+              {
+                "import": true,
+                "name": "Improvised Weapon",
+                "hidden": false,
+                "id": "6ce4-6cce-8a4c-4975",
+                "type": "selectionEntry",
+                "targetId": "63bc-615d-e7cf-fb19"
+              },
+              {
+                "import": true,
+                "name": "Large Claws",
+                "hidden": false,
+                "id": "884e-b516-c3fb-4e38",
+                "type": "selectionEntry",
+                "targetId": "b68e-50b8-b323-08e7"
+              }
+            ],
+            "defaultSelectionEntryId": "6ce4-6cce-8a4c-4975"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Keyword",
+            "hidden": false,
+            "id": "8d67-92dc-40d6-9280",
+            "type": "selectionEntryGroup",
+            "targetId": "0ea3-5549-161a-2105"
+          },
+          {
+            "import": true,
+            "name": "Armour",
+            "hidden": false,
+            "id": "85a4-a085-29e0-c9ae",
+            "type": "selectionEntryGroup",
+            "targetId": "86de-afcc-fe2a-de70"
+          },
+          {
+            "import": true,
+            "name": "Traits",
+            "hidden": false,
+            "id": "2e15-3975-1241-5d9f",
+            "type": "selectionEntryGroup",
+            "targetId": "930e-1703-aaa1-5502"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "b40d-f8d9-74c9-6812",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true,
+                "childName": "The Crescent of Mourn"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "model",
+        "import": true,
+        "name": "Gigantic Horror",
+        "hidden": false,
+        "id": "b361-a4da-2883-5bac",
+        "costs": [
+          {
+            "name": "Obols",
+            "typeId": "7bf0-2994-bf46-2ea8",
+            "value": 190
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Gigantic Horror",
+            "typeId": "9272-a60a-c387-53cb",
+            "typeName": "Unit",
+            "hidden": false,
+            "id": "ee5d-cd0e-3aa2-b63e",
+            "characteristics": [
+              {
+                "name": "AP",
+                "typeId": "838d-3831-326a-d543",
+                "$text": "3"
+              },
+              {
+                "name": "M",
+                "typeId": "f5bf-7829-484a-db1d",
+                "$text": "3\""
+              },
+              {
+                "name": "Violence",
+                "typeId": "09a6-6cdb-ee74-e4d7",
+                "$text": "7+"
+              },
+              {
+                "name": "Ranged",
+                "typeId": "8a1d-c563-4b54-9a31",
+                "$text": "7+"
+              },
+              {
+                "name": "HP",
+                "typeId": "851a-dd01-b57f-9383",
+                "$text": "25"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Keyword",
+            "hidden": false,
+            "id": "b24c-86d4-7c36-cb6b",
+            "type": "selectionEntryGroup",
+            "targetId": "0ea3-5549-161a-2105"
+          },
+          {
+            "import": true,
+            "name": "Armour",
+            "hidden": false,
+            "id": "bbfd-1379-c923-e52a",
+            "type": "selectionEntryGroup",
+            "targetId": "86de-afcc-fe2a-de70"
+          },
+          {
+            "import": true,
+            "name": "Colossal Weapons",
+            "hidden": false,
+            "id": "8b1d-534d-80de-ac2b",
+            "type": "selectionEntryGroup",
+            "targetId": "76e6-c41d-4215-62d7"
+          },
+          {
+            "import": true,
+            "name": "Traits",
+            "hidden": false,
+            "id": "201d-4a88-354c-9ba6",
+            "type": "selectionEntryGroup",
+            "targetId": "930e-1703-aaa1-5502"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Unique",
+            "id": "2c12-a055-f56c-742c",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "9f6c-19b4-4afc-eb56"
+          },
+          {
+            "name": "Threatening Aura",
+            "id": "eb53-1565-539a-ea1e",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "8466-5386-7e68-a67c"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "0783-45b6-e85d-698d",
+            "id": "3e16-2c12-e78d-39f5",
+            "primary": true,
+            "name": "Minion"
+          },
+          {
+            "targetId": "63e3-607f-9056-81b5",
+            "id": "8fa8-80a2-4c51-53de",
+            "primary": false,
+            "name": "Colossal"
+          }
+        ]
+      },
+      {
+        "type": "model",
+        "import": true,
+        "name": "Flying Beast",
+        "hidden": false,
+        "id": "5039-a33f-e10d-9504",
+        "costs": [
+          {
+            "name": "Obols",
+            "typeId": "7bf0-2994-bf46-2ea8",
+            "value": 70
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "0783-45b6-e85d-698d",
+            "id": "13e6-0a4b-aec5-4e6a",
+            "primary": true,
+            "name": "Minion"
+          },
+          {
+            "targetId": "8584-434d-f7a8-0ac4",
+            "id": "f30d-22de-89ac-6033",
+            "primary": false,
+            "name": "Fly"
+          },
+          {
+            "targetId": "4f3c-31a1-da02-e3d4",
+            "id": "28f2-641e-e19e-5017",
+            "primary": false,
+            "name": "Beast"
+          },
+          {
+            "targetId": "b5af-56cf-d76e-e87c",
+            "id": "5827-d43e-0db9-a2bb",
+            "primary": false,
+            "name": "Flying Beast"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "b40d-f8d9-74c9-6812",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true,
+                "childName": "The Crescent of Mourn"
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Flying Beast",
+            "typeId": "9272-a60a-c387-53cb",
+            "typeName": "Unit",
+            "hidden": false,
+            "id": "0264-2da9-5cdc-3ba7",
+            "characteristics": [
+              {
+                "name": "AP",
+                "typeId": "838d-3831-326a-d543",
+                "$text": "2"
+              },
+              {
+                "name": "M",
+                "typeId": "f5bf-7829-484a-db1d",
+                "$text": "4\""
+              },
+              {
+                "name": "Violence",
+                "typeId": "09a6-6cdb-ee74-e4d7",
+                "$text": "7+"
+              },
+              {
+                "name": "Ranged",
+                "typeId": "8a1d-c563-4b54-9a31",
+                "$text": "-"
+              },
+              {
+                "name": "HP",
+                "typeId": "851a-dd01-b57f-9383",
+                "$text": "10"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Weapons",
+            "id": "60d4-ae61-ed8c-5e8e",
+            "hidden": false,
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b259-9354-fd67-a78e",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0c41-2d82-1f00-249b",
+                "includeChildSelections": false
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Claws and Fangs",
+                "hidden": false,
+                "id": "a81c-3a37-b326-a02a",
+                "type": "selectionEntry",
+                "targetId": "4ab4-66ef-4012-cf5e"
+              },
+              {
+                "import": true,
+                "name": "Improvised Weapon",
+                "hidden": false,
+                "id": "03ca-9df0-fc2f-8a6a",
+                "type": "selectionEntry",
+                "targetId": "63bc-615d-e7cf-fb19"
+              }
+            ],
+            "defaultSelectionEntryId": "8c3d-a662-3c65-59a6"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Traits",
+            "hidden": false,
+            "id": "fe59-86fa-b9c7-10aa",
+            "type": "selectionEntryGroup",
+            "targetId": "930e-1703-aaa1-5502"
+          }
+        ]
+      }
+    ],
+    "entryLinks": [
+      {
+        "import": true,
+        "name": "Lich",
+        "hidden": false,
+        "id": "76e9-e988-afbf-53a9",
+        "type": "selectionEntry",
+        "targetId": "d57e-98e6-4da0-b28d"
+      },
+      {
+        "import": true,
+        "name": "Covenant",
+        "hidden": false,
+        "id": "89dc-9475-5cd5-e05d",
+        "type": "selectionEntry",
+        "targetId": "f955-1af2-35ca-34d3",
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "c506-dc84-3620-1cd2-min",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "c506-dc84-3620-1cd2-max",
+            "includeChildSelections": false
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Revenant",
+        "hidden": false,
+        "id": "b6b4-40f2-f022-58a7",
+        "type": "selectionEntry",
+        "targetId": "47ab-ae4f-c674-1fcd"
+      },
+      {
+        "import": true,
+        "name": "Ascended Undead",
+        "hidden": false,
+        "id": "a203-3a37-ee8c-bbfa",
+        "type": "selectionEntry",
+        "targetId": "62ae-edd8-e7d8-b099"
+      },
+      {
+        "import": true,
+        "name": "Husk",
+        "hidden": false,
+        "id": "c015-38d4-5c4b-a691",
+        "type": "selectionEntry",
+        "targetId": "45eb-224f-c838-b389"
+      },
+      {
+        "import": true,
+        "name": "Familiar",
+        "hidden": false,
+        "id": "5b87-c5aa-2dcd-25df",
+        "type": "selectionEntry",
+        "targetId": "2229-c8a0-adee-b185"
+      },
+      {
+        "import": true,
+        "name": "Aberrant Husk",
+        "hidden": false,
+        "id": "8382-af66-7b6d-815a",
+        "type": "selectionEntry",
+        "targetId": "cdb1-fa5a-5a36-38d3"
+      },
+      {
+        "import": true,
+        "name": "Necromantic Remnant",
+        "hidden": false,
+        "id": "31be-3101-fbd7-e1e4",
+        "type": "selectionEntry",
+        "targetId": "113f-fb7d-adc2-7ce6"
+      },
+      {
+        "import": true,
+        "name": "Small Beast",
+        "hidden": false,
+        "id": "e03f-7768-b59d-fae5",
+        "type": "selectionEntry",
+        "targetId": "7151-2978-cd24-f14d"
+      },
+      {
+        "import": true,
+        "name": "Large Beast",
+        "hidden": false,
+        "id": "41b5-f99e-0f55-0b05",
+        "type": "selectionEntry",
+        "targetId": "5abd-2e4f-2e97-afe3"
+      },
+      {
+        "import": true,
+        "name": "Gigantic Horror",
+        "hidden": false,
+        "id": "8ac9-2b06-9ded-5f64",
+        "type": "selectionEntry",
+        "targetId": "b361-a4da-2883-5bac"
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Unique",
+        "typeId": "9087-e42b-f4e7-2001",
+        "typeName": "Abilities",
+        "hidden": false,
+        "id": "9f6c-19b4-4afc-eb56",
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "f11e-ca03-5b2a-f61b",
+            "$text": "Each gathering may only take 1 of this model"
+          }
+        ]
+      },
+      {
+        "name": "Threatening Aura",
+        "typeId": "9087-e42b-f4e7-2001",
+        "typeName": "Abilities",
+        "hidden": false,
+        "id": "8466-5386-7e68-a67c",
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "f11e-ca03-5b2a-f61b",
+            "$text": "This model may take the Lurk action for 0 AP cost once per turn"
+          }
+        ]
+      }
+    ],
+    "type": "catalogue"
+  }
+}
