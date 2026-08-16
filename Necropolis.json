@@ -204,7 +204,7 @@
             "id": "8a1d-c563-4b54-9a31"
           },
           {
-            "name": "HP",
+            "name": "HP", "kind": "Wound",
             "id": "851a-dd01-b57f-9383"
           }
         ]
